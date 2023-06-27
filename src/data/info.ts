@@ -135,8 +135,8 @@ export const info = {
       title: "Astro Portfolio",
       isFeatured: true,
       thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
-      liveUrl: "https://astro-portfolio-uzair.vercel.app/",
+      githubUrl: "https://github.com/AlexSKorn/akorn-astro-portfolio",
+      liveUrl: "https://akorn-portfolio.netlify.app/",
     },
   ],
 };
