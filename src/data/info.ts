@@ -22,7 +22,7 @@ export const info = {
         "-  Lead cross-functional teams to deliver successful software projects on time and to specification.",
         "-  Designed and implemented software solutions using a variety of programming languages and frameworks.",
         "-  Conducted technical assessments and provided recommendations for improving software processes and systems.",
-        "-  Typescript, C#, Go, Python, React, Next JS, Terraform, AWS, Azure, Git, Okta, gRPC, REST",
+        "-  Typescript, C#, Java, Go, Python, React, Next JS, Terraform, AWS, Azure, Postgres, MySQL, DynamoDB Git, Okta, gRPC, REST",
       ],
     },
     {
