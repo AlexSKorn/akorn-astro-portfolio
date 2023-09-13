@@ -89,21 +89,22 @@ export const info = {
     },
     {
       title: "Languages",
-      skills: "Typescript, C#, Python, Go, Java, Rust, SQL",
+      skills: "Typescript, C#, Python, Go, Java, SQL",
     },
     {
       title: "Frameworks",
-      skills: "React, Next.js, Node.js, Flask, .NET, Spring, Pandas, Tailwind",
+      skills:
+        "React, Next.js, Astro, Flask, .NET, Spring, Gin, Pandas, Tailwind",
     },
     {
       title: "Databases",
       skills:
-        "DynamoDB, MongoDB, Postgres, SQL Server, Redis, MySQL, Snowflake",
+        "DynamoDB, MongoDB, Cassandra, Postgres, SQL Server, Redis, MySQL, Snowflake",
     },
     {
       title: "Skills",
       skills:
-        "Git, Docker, Kubernetes. Terraform, gRPC, REST, AWS, Azure, Vercel, Okta, Linux, Windows, OS X",
+        "Node, Git, Kafka, Splunk, Docker, Kubernetes, AWS CDK, Terraform, Bicep, gRPC, REST, AWS, Azure, Vercel, Okta, Linux, Windows",
     },
   ],
 
