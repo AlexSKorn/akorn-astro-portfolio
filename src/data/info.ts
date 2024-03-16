@@ -23,7 +23,7 @@ export const info = {
         "-  Designed and implemented software solutions utilizing an array of programming languages and frameworks.",
         "-  Managed and implemented cloud infrastructure, CI/CD pipelines, and monitoring to ensure seamless operations.",
         "-  Mentored and coached junior engineers to help them grow and develop their technical skills.",
-        "-  Typescript, Python, Golang, Java, C#, Node.js, Django, Gin, Spring, .NET, GraphQL, AWS, AWS CDK, Terraform, Git, Docker, Kubernetes, Postgres, Redis, MongoDB, Jenkins",
+        "-  Typescript, Python, Golang, Java, C#, Node.js, Django, Gin, Spring, .NET, GraphQL, AWS, AWS CDK, Terraform, Git, Kafka, Docker, Kubernetes, Postgres, Redis, MongoDB, Jenkins",
       ],
     },
     {
