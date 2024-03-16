@@ -2,10 +2,10 @@ export const info = {
   baseUrl: "https://akorn-portfolio.netlify.app",
   name: "Alex Korn",
   jobDescription: "Full-Stack Software Engineer",
-  about: `I am a full-stack software engineer and technical leader with over 5 years of experience, 
+  about: `I am a full-stack software engineer and technical leader with 6 years of experience, 
   I have a strong foundation in software engineering principles and a passion for building scalable, 
   innovative software solutions. I have experience working with various technologies and frameworks, 
-  including AWS and Azure, React, C#, Java, Python, GO, Rust and TypeScript. I am skilled in the frontend, backend, 
+  including AWS and Azure, React, C#, Java, Python, Golang and TypeScript. I am skilled in the frontend, backend, 
   and in cloud development, and I have a track record of delivering successful projects on time and to specification. 
   I am a proactive problem-solver with excellent communication and collaboration skills, 
   and I am always looking for opportunities to learn and grow as a leader and software engineer.
@@ -13,16 +13,17 @@ export const info = {
 
   experience: [
     {
-      name: "Slalom - Software Engineering Consultant",
+      name: "Slalom - Senior Software Engineering Consultant",
       location: "Austin, TX (remote)",
       startDate: "March 2022",
       endDate: "Present",
       description: [
-        "-  Collaborated with clients to understand their business needs and translate them into technical requirements.",
-        "-  Lead cross-functional teams to deliver successful software projects on time and to specification.",
-        "-  Designed and implemented software solutions using a variety of programming languages and frameworks.",
-        "-  Conducted technical assessments and provided recommendations for improving software processes and systems.",
-        "-  Typescript, C#, Java, Go, Python, React, Next JS, Terraform, AWS, Azure, Postgres, MySQL, DynamoDB, Git, Okta, gRPC, REST",
+        "-  Conducted technical assessments and gave recommendations for enhancing software processes and systems.",
+        "-  Lead cross-functional teams to achieve timely and precise delivery of software projects.",
+        "-  Designed and implemented software solutions utilizing an array of programming languages and frameworks.",
+        "-  Managed and implemented cloud infrastructure, CI/CD pipelines, and monitoring to ensure seamless operations.",
+        "-  Mentored and coached junior engineers to help them grow and develop their technical skills.",
+        "-  Typescript, Python, Golang, Java, C#, Node.js, Django, Gin, Spring, .NET, GraphQL, AWS, AWS CDK, Terraform, Git, Docker, Kubernetes, Postgres, Redis, MongoDB, Jenkins",
       ],
     },
     {
@@ -89,12 +90,12 @@ export const info = {
     },
     {
       title: "Languages",
-      skills: "Typescript, C#, Python, Go, Java, SQL",
+      skills: "Typescript, Python, Golang, Java, C#, SQL",
     },
     {
       title: "Frameworks",
       skills:
-        "React, Next.js, Astro, Flask, .NET, Spring, Gin, Pandas, Tailwind",
+        "Node.js, React, Next.js, Astro, Flask, Django, .NET, Spring, Gin, Pandas, Tailwind",
     },
     {
       title: "Databases",
