@@ -1,5 +1,5 @@
 export const info = {
-  baseUrl: "https://akorn-portfolio.netlify.app",
+  baseUrl: "https://akorn.netlify.app/",
   name: "Alex Korn",
   jobDescription: "Full-Stack Software Engineer",
   about: `I am a full-stack software engineer and technical leader with 6 years of experience, 
