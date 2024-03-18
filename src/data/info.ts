@@ -5,7 +5,7 @@ export const info = {
   about: `I am a full-stack software engineer and technical leader with 6 years of experience, 
   I have a strong foundation in software engineering principles and a passion for building scalable, 
   innovative software solutions. I have experience working with various technologies and frameworks, 
-  including AWS and Azure, React, C#, Java, Python, Golang and TypeScript. I am skilled in the frontend, backend, 
+  including AWS and Azure, React, C#, Java, Python, Go and TypeScript. I am skilled in the frontend, backend, 
   and in cloud development, and I have a track record of delivering successful projects on time and to specification. 
   I am a proactive problem-solver with excellent communication and collaboration skills, 
   and I am always looking for opportunities to learn and grow as a leader and software engineer.
@@ -23,7 +23,8 @@ export const info = {
         "-  Designed and implemented software solutions utilizing an array of programming languages and frameworks.",
         "-  Managed and implemented cloud infrastructure, CI/CD pipelines, and monitoring to ensure seamless operations.",
         "-  Mentored and coached junior engineers to help them grow and develop their technical skills.",
-        "-  Typescript, Python, Golang, Java, C#, Node.js, Django, Gin, Spring, .NET, GraphQL, AWS, AWS CDK, Terraform, Git, Kafka, Docker, Kubernetes, Postgres, Redis, MongoDB, Jenkins",
+        "-  Helped grow and develop AI initiatives and products at Slalom and for our clients.",
+        "-  Typescript, Python, Go, Java, C#, Node.js, Django, Gin, Spring, .NET, GraphQL, AWS, AWS CDK, Terraform, Git, Kafka, Docker, Kubernetes, Postgres, Redis, MongoDB, Jenkins",
       ],
     },
     {
@@ -90,7 +91,7 @@ export const info = {
     },
     {
       title: "Languages",
-      skills: "Typescript, Python, Golang, Java, C#, SQL",
+      skills: "Typescript, Python, Go, Java, C#, SQL",
     },
     {
       title: "Frameworks",
