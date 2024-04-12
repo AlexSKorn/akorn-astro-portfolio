@@ -19,12 +19,12 @@ export const info = {
       endDate: "Present",
       description: [
         "-  Conducted technical assessments and gave recommendations for enhancing software processes and systems.",
-        "-  Lead cross-functional teams to achieve timely and precise delivery of software projects.",
-        "-  Designed and implemented software solutions utilizing an array of programming languages and frameworks.",
-        "-  Managed and implemented cloud infrastructure, CI/CD pipelines, and monitoring to ensure seamless operations.",
+        "-  Assumed technical lead role, ensuring projects were completed according to requirements and deadlines.",
+        "-  Architected, developed, and tested secure APIs and front-end applications supporting millions of active users.",
+        "-  Engineered and deployed cloud-based infrastructure, streamlined CI/CD processes, and monitoring systems.",
         "-  Mentored and coached junior engineers to help them grow and develop their technical skills.",
-        "-  Helped grow and develop AI initiatives and products at Slalom and for our clients.",
-        "-  Typescript, Python, Go, Java, C#, Node.js, Django, Gin, Spring, .NET, GraphQL, AWS, AWS CDK, Terraform, Git, Kafka, Docker, Kubernetes, Postgres, Redis, MongoDB, Jenkins",
+        "-  Engineered data pipelines to support AI/ML effort across the organization.",
+        "-  Typescript, Python, Go, Java, C#, Node.js, Django, Gin, Spring, .NET, ELK, GraphQL, AWS, AWS CDK, Terraform, Git, Kafka, Docker, Kubernetes, Postgres, Snowflake, Redis, MongoDB, Jenkins",
       ],
     },
     {
@@ -106,7 +106,7 @@ export const info = {
     {
       title: "Skills",
       skills:
-        "Node, Git, Kafka, Splunk, Docker, Kubernetes, AWS CDK, Terraform, Bicep, gRPC, REST, AWS, Azure, Vercel, Okta, Linux, Windows",
+        "Node, Git, Kafka, Splunk, ELK, Docker, Kubernetes, AWS CDK, Terraform, Bicep, gRPC, REST, AWS, Azure, Vercel, Okta, Linux, Windows",
     },
   ],
 
