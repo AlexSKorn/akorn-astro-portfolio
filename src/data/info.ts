@@ -2,13 +2,11 @@ export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
 	jobDescription: "Full-Stack Software Engineer",
-	about: `I am a full-stack software engineer and technical leader with 6 years of experience, 
-  I have a strong foundation in software engineering principles and a passion for building scalable, 
-  innovative software solutions. I have experience working with various technologies and frameworks, 
-  including AWS and Azure, React, C#, Java, Python, Go and TypeScript. I am skilled in the frontend, backend, 
-  and in cloud development, and I have a track record of delivering successful projects on time and to specification. 
-  I am a proactive problem-solver with excellent communication and collaboration skills, 
-  and I am always looking for opportunities to learn and grow as a leader and software engineer.
+	about: `Full-stack Software Engineer with 6 years of experience specializing in high-throughput distributed systems, 
+		cloud development, and full-stack solutions. Skilled in React, Next.js, TypeScript/JavaScript, Go, C#, AWS, Docker, 
+		and Kubernetes, I bring a robust foundation in software engineering principles and a track record of leading technical 
+		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative, 
+		innovative environments, constantly seeking opportunities to enhance my skills and drive impactful results.
   `,
 
 	experience: [

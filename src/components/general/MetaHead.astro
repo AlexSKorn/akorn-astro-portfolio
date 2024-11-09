@@ -27,6 +27,8 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 {title && <title>{`${title} - ${info.name}`}</title>}
 {title && <meta name="title" content={`${title} - ${info.name}`} />}
 {description && <meta name="description" content={description} />}
+<meta name="keywords" content="software engineer, web developer, {info.name}, portfolio, projects" />
+<meta name="author" content={info.name} />
 
 <!-- Open Graph -->
 {title && <meta property="og:type" content="website" />}
@@ -42,6 +44,12 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
     <meta property="og:image" content={`${info.baseUrl}${ogImageUrl}`} />
   )
 }
+
+<!-- Twitter Card metadata -->
+<meta name="twitter:card" content="summary_large_image" />
+{title && <meta name="twitter:title" content={`${title} - ${info.name}`} />}
+{description && <meta name="twitter:description" content={description} />}
+{ogImageUrl && <meta name="twitter:image" content={`${info.baseUrl}${ogImageUrl}`} />}
 
 <!-- preload assests -->
 <link
