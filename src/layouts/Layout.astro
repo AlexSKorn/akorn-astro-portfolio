@@ -8,14 +8,18 @@ import "../styles/style.css";
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alex Korn's Software Engineering Portfolio" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <meta name="generator" content={Astro.generator} />
   </head>
-  <body>
+  <body class="min-h-screen">
+    <a href="#main-content" class="skip-to-content sr-only focus:not-sr-only">
+      Skip to main content
+    </a>
     <Navbar />
-    <main class="container">
+    <main id="main-content" class="container" tabindex="-1">
       <slot />
     </main>
     <Footer />

@@ -5,15 +5,20 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
 ---
 
 <button onclick={`window.open('${githubUrl}', '_blank')`} class="block w-full text-left">
-    <article class="w-full h-[20rem] overflow-hidden relative group rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+    <article 
+        class="w-full h-[20rem] overflow-hidden relative group rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+        role="article"
+        aria-labelledby={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}
+    >
         <div class="flex items-center absolute right-4 top-4 z-10">
             {
                 githubUrl && (
                     <a
                         href={githubUrl}
                         class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
-                        aria-label="Social Media"
+                        aria-label={`View ${title} source code on GitHub`}
                         target="_blank"
+                        rel="noopener noreferrer"
                         onclick="event.stopPropagation()"
                     >
                         <svg
@@ -72,10 +77,13 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
                 height="100%"
                 alt={`Screenshot of ${title} project`}
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 class="text-xl font-semibold mb-2">{title}</h3>
-                </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                <h3 
+                    id={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}
+                    class="absolute bottom-4 left-4 text-xl font-semibold text-white"
+                >
+                    {title}
+                </h3>
             </div>
         </div>
     </article>
