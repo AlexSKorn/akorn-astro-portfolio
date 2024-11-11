@@ -91,17 +91,17 @@ export const info = {
 		{
 			title: "Frameworks",
 			skills:
-				"Node.js, React, Next.js, Astro, Flask, Django, .NET, Spring, Pandas, Tailwind",
+				"React, Next.js, Astro, Node.js, Flask, Django, .NET, Spring, Pandas, Tailwind",
 		},
 		{
 			title: "Databases",
 			skills:
-				"DynamoDB, MongoDB, Cassandra, Postgres, SQL Server, Redis, MySQL, Snowflake",
+				"Postgres, MySQL, SQL Server, MongoDB, DynamoDB, Cassandra, Redis, Snowflake",
 		},
 		{
 			title: "Skills",
 			skills:
-				"Node, Git, Kafka, Datadog, Splunk, Elasticsearch, Kibana, Logstash, Docker, Kubernetes, AWS CDK, Terraform, gRPC, REST, AWS, Azure, Vercel, Okta, Linux, Windows",
+				"AWS, AWS CDK, Azure, Docker, Kubernetes, Terraform, Kafka, REST, gRPC, Git, Datadog, Splunk, Elasticsearch, Kibana, Logstash, Vercel, Okta, Linux, Windows",
 		},
 	],
 
@@ -150,5 +150,36 @@ export const info = {
 			githubUrl: "https://github.com/AlexSKorn/JobQueueGo",
 			liveUrl: "",
 		},
+	],
+
+	technologies: [
+		// Frontend
+		{ name: "TypeScript", icon: "devicon-typescript-plain-wordmark" },
+		{ name: "React", icon: "devicon-react-original-wordmark" },
+		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark" },
+
+		// Runtime/Backend
+		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
+		{ name: "Go", icon: "devicon-go-original-wordmark" },
+
+		// Databases & Caching
+		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark" },
+		{ name: "MongoDB", icon: "devicon-mongodb-plain-wordmark" },
+		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark" },
+		{ name: "Redis", icon: "devicon-redis-plain-wordmark" },
+
+		// Message Queue & Streaming
+		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark" },
+
+		// Cloud & Infrastructure
+		{ name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark" },
+		{ name: "Azure", icon: "devicon-azure-plain-wordmark" },
+		{ name: "Docker", icon: "devicon-docker-plain-wordmark" },
+		{ name: "Kubernetes", icon: "devicon-kubernetes-plain-wordmark" },
+		{ name: "Terraform", icon: "devicon-terraform-plain-wordmark" },
+
+		// Monitoring/CI
+		{ name: "DataDog", icon: "devicon-datadog-plain-wordmark" },
+		{ name: "Jenkins", icon: "devicon-jenkins-plain-wordmark" },
 	],
 };

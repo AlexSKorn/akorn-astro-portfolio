@@ -1,0 +1,20 @@
+---
+import type { ITechnologies } from "@types";
+
+const { title, technologies } = Astro.props as ITechnologies;
+---
+
+<section class="mb-4">
+  <h2 class="w-[15rem] dark:text-light mt-16">{title}</h2>
+  <div class="flex flex-wrap gap-4 mt-4">
+    {
+      technologies.map((tech) => (
+        <div class="flex items-center p-1">
+          <i 
+            class={`text-5xl ${tech.icon} dark:text-white text-black`}
+          />
+        </div>
+      ))
+    }
+  </div>
+</section>

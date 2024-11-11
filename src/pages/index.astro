@@ -7,6 +7,7 @@ import Experience from "@components/home/Experience.astro";
 import TechnicalSkills from "@components/home/TechnicalSkills.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
+import Technologies from "@components/home/Technologies.astro";
 
 const featureProjects = info.projects.reduce((accumulator, project) => {
   if (accumulator.length < 6 && project.isFeatured) {
@@ -31,6 +32,7 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
       <Hero name={info.name} about={info.about} />
       <Experience title={"EXPERIENCE"} details={info.experience} />
       <TechnicalSkills title={"TECHNICAL SKILLS"} skills={info.skills} />
+      <Technologies title={"TECHNOLOGIES"} technologies={info.technologies} />
       <Experience title={"EDUCATION"} details={info.education} />
       <section>
         <h2 class="w-[15rem] dark:text-light mt-16">FEATURE PROJECTS</h2>

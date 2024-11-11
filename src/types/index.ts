@@ -32,6 +32,16 @@ export interface ITechSkill {
 	skills: string;
 }
 
+export interface ITechnology {
+    name: string;
+    icon: string;
+}
+
+export interface ITechnologies {
+    title: string;
+    technologies: ITechnology[];
+}
+
 export interface IProject {
 	title: string;
 	isFeatured: boolean;

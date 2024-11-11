@@ -4,8 +4,20 @@ import Navbar from "@components/general/Navbar.astro";
 import "../styles/style.css";
 ---
 
-<Navbar />
-<main class="container">
-  <slot />
-</main>
-<Footer />
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Navbar />
+    <main class="container">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
