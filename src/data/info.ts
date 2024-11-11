@@ -134,7 +134,7 @@ export const info = {
 			isFeatured: true,
 			thumbnail: "/assets/images/astro-portfolio.png",
 			githubUrl: "https://github.com/AlexSKorn/akorn-astro-portfolio",
-			liveUrl: "https://akorn-portfolio.netlify.app/",
+			liveUrl: "https://akorn.netlify.app",
 		},
 		{
 			title: "Pastebin Next.js",

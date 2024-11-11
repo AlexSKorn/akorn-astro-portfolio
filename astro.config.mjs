@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://akorn-portfolio.netlify.app",
+  site: "https://akorn.netlify.app",
   integrations: [
     tailwind(),
     sitemap({
