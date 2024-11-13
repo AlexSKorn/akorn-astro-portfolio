@@ -11,10 +11,21 @@ export const info = {
 
 	experience: [
 		{
+			name: "Okta - Senior Software Engineer",
+			location: "San Francisco, CA (remote)",
+			startDate: "August 2024",
+			endDate: "Current",
+			description: [
+				"-  Led technical initiatives increasing performance and the security posture of Auth0's extensibility platform",
+				"-  Developed and maintained high-traffic extensibility infrastructure supporting millions of developers design custom authentication and authorization flows",
+				"-  Optimized CI/CD pipelines reducing build times by 50%-80% and increasing developer productivity",
+			],
+		},
+		{
 			name: "Slalom - Senior Software Engineering Consultant",
 			location: "Austin, TX (remote)",
 			startDate: "March 2022",
-			endDate: "Present",
+			endDate: "August 2024",
 			description: [
 				"-  Led technical initiatives as a lead engineer, collaborating with stakeholders to deliver effective solutions",
 				"-  Developed secure, high-traffic, GraphQL, REST and gRPC, APIs supporting millions of users and billions of daily requests",
