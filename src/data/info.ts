@@ -153,14 +153,14 @@ export const info = {
 	],
 
 	technologies: [
-		// Frontend
-		{ name: "TypeScript", icon: "devicon-typescript-plain-wordmark" },
-		{ name: "React", icon: "devicon-react-original-wordmark" },
-		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark" },
-
 		// Runtime/Backend
 		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
 		{ name: "Go", icon: "devicon-go-original-wordmark" },
+		{ name: "TypeScript", icon: "devicon-typescript-plain" },
+
+		// Frontend
+		{ name: "React", icon: "devicon-react-original-wordmark" },
+		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark" },
 
 		// Databases & Caching
 		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark" },
