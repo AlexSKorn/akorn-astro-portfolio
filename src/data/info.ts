@@ -16,7 +16,7 @@ export const info = {
 			startDate: "August 2024",
 			endDate: "Current",
 			description: [
-				"-  Spearheaded technical initiatives to enhance the performance and security of Auth0’s extensibility platform, ensuring a robust and scalable developer experience.",
+				"-  Spearheaded technical initiatives to enhance the performance and security of Auth0’s extensibility platform, ensuring a robust and scalable login experience.",
 				"-  Engineered and maintained high-traffic extensibility infrastructure, empowering thousands of developers to run custom code in their authentication and authorization flows",
 				"-  Optimized CI/CD pipelines, cutting build times by 50%-80%, significantly boosting developer efficiency and deployment speed",
 				"-  Implemented and developed metrics-driven monitoring and alerting systems, enabling real-time performance monitoring and streamlined troubleshooting",
