@@ -8,6 +8,7 @@ export const info = {
 		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative,
 		innovative environments, constantly seeking opportunities to enhance my skills and drive impactful results.
   `,
+
 	experience: [
 		{
 			name: "Okta - Senior Software Engineer (Auth0)",
@@ -15,9 +16,10 @@ export const info = {
 			startDate: "August 2024",
 			endDate: "Current",
 			description: [
-				"-  Led technical initiatives increasing performance and the security posture of Auth0's extensibility platform",
-				"-  Developed and maintained high-traffic extensibility infrastructure supporting millions of developers design custom authentication and authorization flows",
-				"-  Optimized CI/CD pipelines reducing build times by 50%-80% and increasing developer productivity",
+				"-  Spearheaded technical initiatives to enhance the performance and security of Auth0’s extensibility platform, ensuring a robust and scalable developer experience.",
+				"-  Engineered and maintained high-traffic extensibility infrastructure, empowering thousands of developers to run custom code in their authentication and authorization flows",
+				"-  Optimized CI/CD pipelines, cutting build times by 50%-80%, significantly boosting developer efficiency and deployment speed",
+				"-  Implemented and developed metrics-driven monitoring and alerting systems, enabling real-time performance monitoring and streamlined troubleshooting",
 			],
 		},
 		{
