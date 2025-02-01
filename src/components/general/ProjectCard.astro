@@ -6,16 +6,16 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
 
 <button onclick={`window.open('${githubUrl}', '_blank')`} class="block w-full text-left">
     <article 
-        class="w-full h-[20rem] overflow-hidden relative group rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
+        class="w-full h-[15rem] overflow-hidden relative group rounded-lg shadow-md hover:shadow-xl transition-all duration-300"
         role="article"
         aria-labelledby={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}
     >
-        <div class="flex items-center absolute right-4 top-4 z-10">
+        <div class="flex items-center absolute right-2 top-2 z-10">
             {
                 githubUrl && (
                     <a
                         href={githubUrl}
-                        class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
+                        class="text-white p-2 bg-black/50 rounded-full backdrop-blur-md"
                         aria-label={`View ${title} source code on GitHub`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -23,8 +23,8 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
+                            width="16"
+                            height="16"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -43,15 +43,15 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
                 liveUrl && (
                     <a
                         href={liveUrl}
-                        class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
+                        class="text-white p-2 bg-black/50 rounded-full backdrop-blur-md ml-1"
                         aria-label="Social Media"
                         target="_blank"
                         onclick="event.stopPropagation()"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
+                            width="16"
+                            height="16"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -80,7 +80,7 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
                 <h3 
                     id={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}
-                    class="absolute bottom-4 left-4 text-xl font-semibold text-white"
+                    class="absolute bottom-2 left-2 text-lg font-semibold text-white"
                 >
                     {title}
                 </h3>
