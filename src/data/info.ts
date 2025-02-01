@@ -2,16 +2,15 @@ export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
 	jobDescription: "Full-Stack Software Engineer",
-	about: `Full-stack Software Engineer with 6 years of experience specializing in high-throughput distributed systems, 
-		cloud development, and full-stack solutions. Skilled in React, Next.js, TypeScript/JavaScript, Go, C#, AWS, Docker, 
-		and Kubernetes, I bring a robust foundation in software engineering principles and a track record of leading technical 
-		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative, 
+	about: `Full-stack Software Engineer with 7 years of experience specializing in high-throughput distributed systems,
+		cloud development, and full-stack solutions. Skilled in React, Next.js, TypeScript/JavaScript, Go, AWS, Azure, Docker,
+		and Kubernetes, I bring a robust foundation in software engineering principles and a track record of leading technical
+		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative,
 		innovative environments, constantly seeking opportunities to enhance my skills and drive impactful results.
   `,
-
 	experience: [
 		{
-			name: "Okta - Senior Software Engineer",
+			name: "Okta - Senior Software Engineer (Auth0)",
 			location: "San Francisco, CA (remote)",
 			startDate: "August 2024",
 			endDate: "Current",
@@ -190,7 +189,7 @@ export const info = {
 		{ name: "Terraform", icon: "devicon-terraform-plain-wordmark" },
 
 		// Monitoring/CI
-		{ name: "DataDog", icon: "devicon-datadog-plain-wordmark" },
+		{ name: "DataDog", icon: "devicon-datadoglogo-plain" },
 		{ name: "Jenkins", icon: "devicon-jenkins-plain-wordmark" },
 	],
 };
