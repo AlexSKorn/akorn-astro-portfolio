@@ -160,7 +160,7 @@ export const info = {
 			liveUrl: "",
 			description:
 				"High-performance distributed job queue system written in Go. Handles concurrent job processing with Redis backend and comprehensive monitoring.",
-			technologies: ["Go", "Redis", "Docker", "Prometheus", "Grafana"],
+			technologies: ["Go"],
 			achievements: [
 				"Processes 10k+ jobs/minute",
 				"Zero-downtime deployments",
