@@ -96,25 +96,6 @@ export const info = {
 			title: "Certifications",
 			skills: "AWS Solutions Architect",
 		},
-		{
-			title: "Languages",
-			skills: "Typescript, Go, Python, Java, C#, SQL",
-		},
-		{
-			title: "Frameworks",
-			skills:
-				"React, Next.js, Astro, Node.js, Flask, Django, .NET, Spring, Pandas, Tailwind",
-		},
-		{
-			title: "Databases",
-			skills:
-				"Postgres, MySQL, SQL Server, MongoDB, DynamoDB, Cassandra, Redis, Snowflake",
-		},
-		{
-			title: "Skills",
-			skills:
-				"AWS, AWS CDK, Azure, Docker, Kubernetes, Terraform, Kafka, REST, gRPC, Git, Datadog, Splunk, Elasticsearch, Kibana, Logstash, Vercel, Okta, Linux, Windows",
-		},
 	],
 
 	education: [
@@ -147,6 +128,14 @@ export const info = {
 			thumbnail: "/assets/images/astro-portfolio.png",
 			githubUrl: "https://github.com/AlexSKorn/akorn-astro-portfolio",
 			liveUrl: "https://akorn.netlify.app",
+			description:
+				"Modern, responsive portfolio website built with Astro and TypeScript. Features dark/light mode, optimized performance, and accessibility compliance.",
+			technologies: ["Astro", "TypeScript", "Tailwind CSS", "Netlify"],
+			achievements: [
+				"100% Lighthouse performance score",
+				"Fully responsive design",
+				"SEO optimized",
+			],
 		},
 		{
 			title: "Pastebin Next.js",
@@ -154,6 +143,14 @@ export const info = {
 			thumbnail: "/assets/images/pastebin.png",
 			githubUrl: "https://github.com/AlexSKorn/paste-bin",
 			liveUrl: "",
+			description:
+				"Full-stack pastebin application with real-time syntax highlighting, user authentication, and secure data storage. Built with modern web technologies.",
+			technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
+			achievements: [
+				"Real-time collaboration",
+				"Secure authentication",
+				"Multi-language syntax highlighting",
+			],
 		},
 		{
 			title: "Job Queue Go",
@@ -161,27 +158,49 @@ export const info = {
 			thumbnail: "/assets/images/queue.png",
 			githubUrl: "https://github.com/AlexSKorn/JobQueueGo",
 			liveUrl: "",
+			description:
+				"High-performance distributed job queue system written in Go. Handles concurrent job processing with Redis backend and comprehensive monitoring.",
+			technologies: ["Go", "Redis", "Docker", "Prometheus", "Grafana"],
+			achievements: [
+				"Processes 10k+ jobs/minute",
+				"Zero-downtime deployments",
+				"Built-in monitoring and alerting",
+			],
 		},
 	],
 
 	technologies: [
-		// Runtime/Backend
-		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
-		{ name: "Go", icon: "devicon-go-original-wordmark" },
+		// Languages
 		{ name: "TypeScript", icon: "devicon-typescript-plain" },
+		{ name: "Go", icon: "devicon-go-original-wordmark" },
+		{ name: "Python", icon: "devicon-python-plain" },
+		{ name: "Java", icon: "devicon-java-plain" },
+		{ name: "C#", icon: "devicon-csharp-plain" },
 
-		// Frontend
+		// Frameworks
 		{ name: "React", icon: "devicon-react-original-wordmark" },
 		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark" },
+		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
+		{ name: "Spring", icon: "devicon-spring-plain" },
+		{ name: "Django", icon: "devicon-django-plain" },
+		{ name: "TailwindCSS", icon: "devicon-tailwindcss-plain" },
 
 		// Databases & Caching
 		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark" },
 		{ name: "MongoDB", icon: "devicon-mongodb-plain-wordmark" },
 		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark" },
 		{ name: "Redis", icon: "devicon-redis-plain-wordmark" },
+		{ name: "DynamoDB", icon: "devicon-dynamodb-plain" },
+		{ name: "Snowflake", icon: "devicon-snowflake-original" },
 
-		// Message Queue & Streaming
-		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark" },
+		// Artificial Intelligence
+		{ name: "GitHub Copilot", icon: "devicon-github-original" },
+		{ name: "Cursor", icon: "devicon-vscode-plain" },
+		{ name: "Langchain", icon: "devicon-python-plain" },
+		{
+			name: "Amazon Bedrock",
+			icon: "devicon-amazonwebservices-plain-wordmark",
+		},
 
 		// Cloud & Infrastructure
 		{ name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark" },
@@ -189,9 +208,14 @@ export const info = {
 		{ name: "Docker", icon: "devicon-docker-plain-wordmark" },
 		{ name: "Kubernetes", icon: "devicon-kubernetes-plain-wordmark" },
 		{ name: "Terraform", icon: "devicon-terraform-plain-wordmark" },
+		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark" },
 
 		// Monitoring/CI
-		{ name: "DataDog", icon: "devicon-datadoglogo-plain" },
-		{ name: "Jenkins", icon: "devicon-jenkins-plain-wordmark" },
+		{ name: "DataDog", icon: "devicon-datadog-plain" },
+		{ name: "Jenkins", icon: "devicon-jenkins-line" },
+		{ name: "Argo CD", icon: "devicon-argocd-plain" },
+		{ name: "CloudWatch", icon: "devicon-amazonwebservices-plain-wordmark" },
+		{ name: "OpenTelemetry", icon: "devicon-opentelemetry-plain" },
+		{ name: "GitHub Actions", icon: "devicon-github-original" },
 	],
 };

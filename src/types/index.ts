@@ -33,13 +33,13 @@ export interface ITechSkill {
 }
 
 export interface ITechnology {
-    name: string;
-    icon: string;
+	name: string;
+	icon: string;
 }
 
 export interface ITechnologies {
-    title: string;
-    technologies: ITechnology[];
+	title: string;
+	technologies: ITechnology[];
 }
 
 export interface IProject {
@@ -48,6 +48,9 @@ export interface IProject {
 	thumbnail: string;
 	githubUrl: string;
 	liveUrl: string;
+	description?: string;
+	technologies?: string[];
+	achievements?: string[];
 }
 export interface IProjects {
 	projects: IProject[];
