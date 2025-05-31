@@ -5,15 +5,16 @@ import { info } from "@data";
 <footer
   class="container flex sm:flex-row flex-col justify-between items-center mb-8 sm:mb-4"
 >
-  <p class="dark:text-light text-right my-8">
+  <p class="dark:text-light text-center sm:text-left my-8">
     Developed by <strong>Alexander Korn</strong>
   </p>
-  <div class="grid grid-cols-3 gap-4">
+  <div class="flex gap-4">
     <a
-      aria-label="Social Media"
+      aria-label="Visit GitHub profile"
       href={info.socialMedia.github}
       target="_blank"
-      class="footer-icons"
+      rel="noopener noreferrer"
+      class="footer-icons hover:scale-105 transition-transform"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -32,10 +33,11 @@ import { info } from "@data";
       </svg>
     </a>
     <a
-      aria-label="Social Media"
+      aria-label="Visit LinkedIn profile"
       href={info.socialMedia.linkedin}
       target="_blank"
-      class="footer-icons"
+      rel="noopener noreferrer"
+      class="footer-icons hover:scale-105 transition-transform"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -57,10 +59,9 @@ import { info } from "@data";
       </svg>
     </a>
     <a
-      aria-label="Social Media"
-      href={info.socialMedia.email}
-      target="_blank"
-      class="footer-icons"
+      aria-label="Send email"
+      href={`mailto:${info.socialMedia.email}`}
+      class="footer-icons hover:scale-105 transition-transform"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

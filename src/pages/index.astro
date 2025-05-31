@@ -32,7 +32,7 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
       <Hero name={info.name} about={info.about} />
       
       <!-- Featured Projects Section -->
-      <section class="my-8">
+      <section id="projects" class="my-8">
         <div class="flex items-center mb-8">
           <div class="w-1 h-8 bg-blue mr-4"></div>
           <h2 class="text-2xl font-semibold dark:text-light">FEATURED PROJECTS</h2>
@@ -40,7 +40,9 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
         <ProjectsWrapper projects={featureProjects} />
       </section>
 
-      <Experience title={"EXPERIENCE"} details={info.experience} />
+      <div id="experience">
+        <Experience title={"EXPERIENCE"} details={info.experience} />
+      </div>
       <Technologies title={"TECHNOLOGIES"} technologies={info.technologies} />
       <TechnicalSkills title={"CERTIFICATIONS"} skills={info.skills} />
       <Experience title={"EDUCATION"} details={info.education} />

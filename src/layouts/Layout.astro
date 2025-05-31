@@ -23,5 +23,37 @@ import "../styles/style.css";
       <slot />
     </main>
     <Footer />
+    
+    <!-- Back to top button -->
+    <button 
+      id="back-to-top" 
+      class="back-to-top" 
+      aria-label="Back to top"
+      title="Back to top"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m18 15-6-6-6 6"/>
+      </svg>
+    </button>
+
+    <script>
+      // Back to top functionality
+      const backToTopButton = document.getElementById('back-to-top');
+      
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton?.classList.add('visible');
+        } else {
+          backToTopButton?.classList.remove('visible');
+        }
+      });
+      
+      backToTopButton?.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
   </body>
 </html>
