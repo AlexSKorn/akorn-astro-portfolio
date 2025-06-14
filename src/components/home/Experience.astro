@@ -54,6 +54,22 @@ const { title, details } = Astro.props as IExperiences;
                 </li>
               ))}
             </ul>
+
+            {/* Skills section for each job */}
+            {item.skills && item.skills.length > 0 && (
+              <div class="mt-4">
+                <h4 class="text-sm font-semibold text-dark dark:text-light mb-2 uppercase tracking-wide opacity-80">
+                  Key Technologies & Skills
+                </h4>
+                <div class="flex flex-wrap gap-2">
+                  {item.skills.map((skill) => (
+                    <span class="px-2 py-1 bg-blue/10 dark:bg-blue/20 text-blue dark:text-blue-300 text-xs font-medium rounded-full border border-blue/20">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       ))
