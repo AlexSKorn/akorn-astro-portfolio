@@ -3,7 +3,7 @@ export const info = {
 	name: "Alex Korn",
 	jobDescription: "Full-Stack Software Engineer",
 	about: `Full-stack Software Engineer with 7 years of experience specializing in high-throughput distributed systems,
-		cloud development, and full-stack solutions. Skilled in React, Next.js, TypeScript/JavaScript, Go, AWS, Azure, Docker,
+		cloud development, and full-stack solutions. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker,
 		and Kubernetes, I bring a robust foundation in software engineering principles and a track record of leading technical
 		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative,
 		innovative environments, constantly seeking opportunities to enhance my skills and drive impactful results.
