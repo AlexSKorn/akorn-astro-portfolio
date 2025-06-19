@@ -5,19 +5,25 @@ const { title, skills } = Astro.props as ITechnicalSkills;
 ---
 
 <section
-  class="flex items-start justify-between flex-col lg:flex-row dark:text-light my-16"
+	class="flex items-start justify-between flex-col lg:flex-row text-gray-800 dark:text-gray-200 my-10"
 >
-  <h2 class="w-full lg:w-[15rem] mb-8 lg:mb-0 text-2xl font-semibold">{title}</h2>
-  <div class="w-full lg:flex-1">
-    <ul class="space-y-3">
-      {
-        skills.map((item) => (
-          <li class="text-gray-700 dark:text-gray-300 flex items-start leading-relaxed">
-            <span class="text-blue mr-3 mt-1 text-xs flex-shrink-0">●</span>
-            <span class="flex-1">{item.skills}</span>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+	<h2
+		class="w-full lg:w-[15rem] mb-8 lg:mb-0 text-2xl font-semibold text-gray-800 dark:text-gray-100"
+	>
+		{title}
+	</h2>
+	<div class="w-full lg:flex-1">
+		<ul class="space-y-3">
+			{
+				skills.map((item) => (
+					<li class="text-gray-700 dark:text-gray-300 flex items-start leading-relaxed">
+						<span class="text-blue-500 dark:text-blue-400 mr-3 mt-1 text-xs flex-shrink-0">
+							●
+						</span>
+						<span class="flex-1">{item.skills}</span>
+					</li>
+				))
+			}
+		</ul>
+	</div>
 </section>

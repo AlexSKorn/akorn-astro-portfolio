@@ -2,8 +2,8 @@ export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
 	jobDescription: "Full-Stack Software Engineer",
-	about: `Full-stack Software Engineer with 7 years of experience specializing in high-throughput distributed systems,
-		cloud development, and full-stack solutions. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker,
+	about: `Full-stack Software Engineer with 8+ years of experience specializing in high-throughput distributed systems,
+		cloud development, AI, and full-stack solutions. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker,
 		and Kubernetes, I bring a robust foundation in software engineering principles and a track record of leading technical
 		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative,
 		innovative environments, constantly seeking opportunities to enhance my skills and drive impactful results.
@@ -21,6 +21,7 @@ export const info = {
 				"-  Drove a 50-80% reduction in CI/CD build and test times by re-architecting the pipeline with parallelized jobs and improved caching, accelerating developer velocity",
 				"-  Enhanced and developed metrics-driven monitoring and alerting systems, enabling real-time performance monitoring and streamlined troubleshooting",
 				"-  Reduced Kubernetes cluster startup time from 2 minutes 45 seconds to 1 minute 30 seconds by parallelizing pod initialization and optimizing resource allocation",
+				"-  Led efforts to modernize and implement AI solutions, boosting developer productivity, enhancing platform documentation, and improving developer velocity and experience",
 			],
 			skills: [
 				"Go",
@@ -218,7 +219,7 @@ export const info = {
 			githubUrl: "https://github.com/AlexSKorn/akorn-astro-portfolio",
 			liveUrl: "https://akorn.netlify.app",
 			description:
-				"Modern, responsive portfolio website built with Astro and TypeScript. Features dark/light mode, optimized performance, and accessibility compliance.",
+				"A modern, high-performance portfolio website showcasing my expertise in frontend development and performance optimization. Built with Astro for optimal loading speeds and SEO.",
 			technologies: ["Astro", "TypeScript", "Tailwind CSS", "Netlify"],
 			achievements: [
 				"100% Lighthouse performance score",
@@ -227,33 +228,33 @@ export const info = {
 			],
 		},
 		{
-			title: "Pastebin Next.js",
-			isFeatured: true,
-			thumbnail: "/assets/images/pastebin.png",
-			githubUrl: "https://github.com/AlexSKorn/paste-bin",
-			liveUrl: "",
-			description:
-				"Full-stack pastebin application with real-time syntax highlighting, user authentication, and secure data storage. Built with modern web technologies.",
-			technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
-			achievements: [
-				"Real-time collaboration",
-				"Secure authentication",
-				"Multi-language syntax highlighting",
-			],
-		},
-		{
-			title: "Job Queue Go",
+			title: "Distributed Job Queue System",
 			isFeatured: true,
 			thumbnail: "/assets/images/queue.png",
 			githubUrl: "https://github.com/AlexSKorn/JobQueueGo",
 			liveUrl: "",
 			description:
-				"High-performance distributed job queue system written in Go. Handles concurrent job processing with Redis backend and comprehensive monitoring.",
-			technologies: ["Go"],
+				"A high-throughput distributed job processing system built in Go. Demonstrates my expertise in concurrent programming, system design, and performance optimization at scale.",
+			technologies: ["Go", "Redis", "Docker", "Prometheus"],
 			achievements: [
 				"Processes 10k+ jobs/minute",
-				"Zero-downtime deployments",
-				"Built-in monitoring and alerting",
+				"Built-in monitoring and metrics",
+				"Horizontally scalable architecture",
+			],
+		},
+		{
+			title: "Full-Stack Pastebin Application",
+			isFeatured: true,
+			thumbnail: "/assets/images/pastebin.png",
+			githubUrl: "https://github.com/AlexSKorn/paste-bin",
+			liveUrl: "",
+			description:
+				"A secure, feature-rich pastebin application showcasing full-stack development skills. Includes user authentication, syntax highlighting, and real-time collaboration features.",
+			technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
+			achievements: [
+				"Real-time collaboration",
+				"Multi-language syntax highlighting",
+				"Secure user authentication",
 			],
 		},
 	],

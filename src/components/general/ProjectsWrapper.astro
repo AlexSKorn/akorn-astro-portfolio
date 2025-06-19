@@ -5,6 +5,6 @@ import ProjectCard from "./ProjectCard.astro";
 const { projects } = Astro.props as IProjects;
 ---
 
-<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 my-16">
-  {projects.map((project) => <ProjectCard projectDetail={project} />)}
+<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 my-6">
+	{projects.map((project) => <ProjectCard projectDetail={project} />)}
 </div>
