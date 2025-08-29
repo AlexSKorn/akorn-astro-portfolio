@@ -88,9 +88,21 @@ html.dark *:focus-visible {
   animation: fadeInUp 0.6s ease-out;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .fade-in-up,
+  .fade-in-up.visible,
+  .project-card,
+  .project-card:hover {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
 /* Improved section spacing */
 section {
-  scroll-margin-top: 2rem;
+  scroll-margin-top: 7rem; /* account for sticky header */
 }
 
 /* Custom scrollbar for webkit browsers */

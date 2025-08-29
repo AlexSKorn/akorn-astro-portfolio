@@ -1,5 +1,11 @@
 // Intersection Observer for fade-in animations
 function initScrollAnimations() {
+	if (
+		window.matchMedia &&
+		window.matchMedia("(prefers-reduced-motion: reduce)").matches
+	) {
+		return; // Respect reduced motion: skip adding animations
+	}
 	const observerOptions = {
 		threshold: 0.1,
 		rootMargin: "0px 0px -50px 0px",

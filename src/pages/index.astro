@@ -19,42 +19,39 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
 }, []);
 ---
 
----
-
-<html lang="en">
-	<head>
+<Layout>
+	<Fragment slot="head">
 		<MetaHead
-			title={"Alex Korn - Senior Full-Stack Software Engineer | React, Go, AWS Expert"}
+			title={"Senior Full-Stack Software Engineer | TypeScript, Go, AWS, React"}
 			description={"Senior Software Engineer with 7+ years experience in high-performance distributed systems, cloud development, and full-stack solutions. Currently at Okta, specializing in TypeScript, Go, React, AWS, and Kubernetes."}
-			ogImageUrl={"/assets/images/profile.png"}
+			ogImageUrl={"/assets/images/astro-portfolio.png"}
 		/>
-	</head>
+	</Fragment>
 
-	<body>
-		<Layout>
-			<Hero name={info.name} about={info.about} />
+	<Hero name={info.name} about={info.about} />
 
-			<About />
+	<About />
 
-			<!-- Featured Projects Section -->
-			<section id="projects" class="my-10">
-				<div class="flex items-center mb-6">
-					<div class="w-1 h-8 bg-blue-500 dark:bg-blue-400 mr-4"></div>
-					<h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-100">
-						FEATURED PROJECTS
-					</h2>
-				</div>
-				<ProjectsWrapper projects={featureProjects} />
-			</section>
+	<!-- Featured Projects Section -->
+	<section id="projects" class="my-10" aria-labelledby="projects-title">
+		<div class="flex items-center mb-6">
+			<div class="w-1 h-8 bg-blue-500 dark:bg-blue-400 mr-4"></div>
+			<h2
+				id="projects-title"
+				class="text-2xl font-semibold text-gray-800 dark:text-gray-100"
+			>
+				FEATURED PROJECTS
+			</h2>
+		</div>
+		<ProjectsWrapper projects={featureProjects} />
+	</section>
 
-			<div id="experience">
-				<Experience title={"EXPERIENCE"} details={info.experience} />
-			</div>
-			<Technologies title={"TECHNOLOGIES"} technologies={info.technologies} />
-			<TechnicalSkills title={"CERTIFICATIONS"} skills={info.skills} />
-			<Experience title={"EDUCATION"} details={info.education} />
+	<section id="experience" aria-labelledby="experience-title">
+		<Experience title={"EXPERIENCE"} details={info.experience} />
+	</section>
+	<Technologies title={"TECHNOLOGIES"} technologies={info.technologies} />
+	<TechnicalSkills title={"CERTIFICATIONS"} skills={info.skills} />
+	<Experience title={"EDUCATION"} details={info.education} />
 
-			<Contact />
-		</Layout>
-	</body>
-</html>
+	<Contact />
+</Layout>

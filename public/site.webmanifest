@@ -1,7 +1,17 @@
 {
-  "name": "",
-  "short_name": "",
-  "icons": [],
+  "name": "Alex Korn Portfolio",
+  "short_name": "AK Portfolio",
+  "description": "Portfolio and projects by Senior Full-Stack Software Engineer Alex Korn.",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/safari-pinned-tab.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
