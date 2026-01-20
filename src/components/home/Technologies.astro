@@ -17,28 +17,28 @@ const groupedTechnologies = {
 <section class="mb-10" aria-labelledby="technologies-title">
 	<h2
 		id="technologies-title"
-		class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6"
+		class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6 fade-in-up"
 	>
 		{title}
 	</h2>
 
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 		{
-			Object.entries(groupedTechnologies).map(([category, techs]) => (
-				<div class="bg-white/70 dark:bg-gray-800/70 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-300 hover:shadow-lg backdrop-blur-sm">
+			Object.entries(groupedTechnologies).map(([category, techs], catIndex) => (
+				<div class={`glass-card rounded-xl p-6 hover:shadow-lg transition-all duration-300 fade-in-up stagger-${Math.min(catIndex + 1, 6)}`}>
 					<h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4 font-outfit flex items-center">
-						<span class="w-3 h-3 bg-blue-500 dark:bg-blue-400 rounded-full mr-3" />
+						<span class="w-3 h-3 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full mr-3" />
 						{category}
 					</h3>
 					<div class="grid grid-cols-2 gap-4">
 						{techs.map((tech) => (
 							<div
-								class="flex flex-col items-center p-3 rounded-lg bg-white/80 dark:bg-gray-700/80 border border-gray-100 dark:border-gray-600 hover:border-blue-300 dark:hover:border-blue-400 transition-all duration-300 hover:scale-105 group"
+								class="tech-icon-card flex flex-col items-center p-3 rounded-lg bg-white/50 dark:bg-gray-700/50 border border-gray-100 dark:border-gray-600 group"
 								role="listitem"
 								aria-label={tech.name}
 							>
 								<i
-									class={`text-3xl ${tech.icon} text-gray-700 dark:text-gray-200 mb-2 group-hover:scale-110 transition-transform duration-300`}
+									class={`text-3xl ${tech.icon} text-gray-700 dark:text-gray-200 mb-2 transition-colors duration-300`}
 									aria-hidden="true"
 								/>
 								<span class="text-xs font-medium text-center text-gray-700 dark:text-gray-200 leading-tight">
