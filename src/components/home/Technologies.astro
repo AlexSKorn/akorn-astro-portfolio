@@ -5,12 +5,12 @@ const { title, technologies } = Astro.props as ITechnologies;
 
 // Group technologies by category based on their position in the array
 const groupedTechnologies = {
-	Languages: technologies.slice(0, 5),
-	Frameworks: technologies.slice(5, 11),
-	"Databases & Caching": technologies.slice(11, 17),
-	"Artificial Intelligence": technologies.slice(17, 23),
-	"Cloud & Infrastructure": technologies.slice(23, 29),
-	"Monitoring & CI/CD": technologies.slice(29),
+	Languages: technologies.slice(0, 3),
+	Frameworks: technologies.slice(3, 9),
+	"Databases & Caching": technologies.slice(9, 15),
+	"Artificial Intelligence": technologies.slice(15, 21),
+	"Cloud & Infrastructure": technologies.slice(21, 27),
+	"Monitoring & CI/CD": technologies.slice(27),
 };
 ---
 
@@ -37,10 +37,20 @@ const groupedTechnologies = {
 								role="listitem"
 								aria-label={tech.name}
 							>
-								<i
-									class={`text-3xl ${tech.icon} text-gray-700 dark:text-gray-200 mb-2 transition-colors duration-300`}
-									aria-hidden="true"
-								/>
+								{
+									tech.icon.endsWith(".svg") ? (
+										<img
+											src={tech.icon}
+											alt={`${tech.name} icon`}
+											class="w-8 h-8 mb-2 dark:invert opacity-80 transition-all duration-300"
+										/>
+									) : (
+										<i
+											class={`text-3xl ${tech.icon} text-gray-700 dark:text-gray-200 mb-2 transition-colors duration-300`}
+											aria-hidden="true"
+										/>
+									)
+								}
 								<span class="text-xs font-medium text-center text-gray-700 dark:text-gray-200 leading-tight">
 									{tech.name}
 								</span>

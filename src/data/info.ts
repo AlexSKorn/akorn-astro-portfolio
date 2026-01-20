@@ -264,23 +264,21 @@ export const info = {
 		{ name: "TypeScript", icon: "devicon-typescript-plain" },
 		{ name: "Go", icon: "devicon-go-original-wordmark" },
 		{ name: "Python", icon: "devicon-python-plain" },
-		{ name: "Java", icon: "devicon-java-plain" },
-		{ name: "C#", icon: "devicon-csharp-plain" },
 
 		// Frameworks
 		{ name: "React", icon: "devicon-react-original-wordmark" },
 		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark" },
 		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
-		{ name: "Spring", icon: "devicon-spring-plain" },
-		{ name: "Django", icon: "devicon-django-plain" },
 		{ name: "TailwindCSS", icon: "devicon-tailwindcss-plain" },
+		{ name: "LangGraph", icon: "si si-langchain" },
+		{ name: "Django", icon: "devicon-django-plain" },
 
 		// Databases & Caching
 		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark" },
 		{ name: "MongoDB", icon: "devicon-mongodb-plain-wordmark" },
 		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark" },
 		{ name: "Redis", icon: "devicon-redis-plain-wordmark" },
-		{ name: "DynamoDB", icon: "devicon-dynamodb-plain" },
+		{ name: "Pinecone", icon: "/assets/icons/pinecone.svg" },
 		{ name: "Snowflake", icon: "si si-snowflake" },
 
 		// Artificial Intelligence
@@ -288,7 +286,7 @@ export const info = {
 		{ name: "Cursor", icon: "si si-cursor" },
 		{ name: "Claude Code", icon: "si si-anthropic" },
 		{ name: "Gemini", icon: "si si-googlegemini" },
-		{ name: "Langchain", icon: "si si-langchain" },
+		{ name: "Hugging Face", icon: "si si-huggingface" },
 		{
 			name: "Amazon Bedrock",
 			icon: "devicon-amazonwebservices-plain-wordmark",
