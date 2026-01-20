@@ -281,12 +281,14 @@ export const info = {
 		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark" },
 		{ name: "Redis", icon: "devicon-redis-plain-wordmark" },
 		{ name: "DynamoDB", icon: "devicon-dynamodb-plain" },
-		{ name: "Snowflake", icon: "devicon-snowflake-original" },
+		{ name: "Snowflake", icon: "si si-snowflake" },
 
 		// Artificial Intelligence
-		{ name: "GitHub Copilot", icon: "devicon-github-original" },
-		{ name: "Cursor", icon: "devicon-vscode-plain" },
-		{ name: "Langchain", icon: "devicon-python-plain" },
+		{ name: "GitHub Copilot", icon: "si si-githubcopilot" },
+		{ name: "Cursor", icon: "si si-cursor" },
+		{ name: "Claude Code", icon: "si si-anthropic" },
+		{ name: "Gemini", icon: "si si-googlegemini" },
+		{ name: "Langchain", icon: "si si-langchain" },
 		{
 			name: "Amazon Bedrock",
 			icon: "devicon-amazonwebservices-plain-wordmark",
@@ -306,6 +308,6 @@ export const info = {
 		{ name: "Argo CD", icon: "devicon-argocd-plain" },
 		{ name: "CloudWatch", icon: "devicon-amazonwebservices-plain-wordmark" },
 		{ name: "OpenTelemetry", icon: "devicon-opentelemetry-plain" },
-		{ name: "GitHub Actions", icon: "devicon-github-original" },
+		{ name: "GitHub Actions", icon: "si si-githubactions" },
 	],
 };

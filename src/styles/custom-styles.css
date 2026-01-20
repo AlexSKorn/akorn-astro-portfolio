@@ -231,9 +231,9 @@ section {
 /* Intersection Observer animations */
 .fade-in-up {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(20px);
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fade-in-up.visible {
@@ -243,27 +243,27 @@ section {
 
 /* Staggered animation delays */
 .stagger-1 {
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .stagger-2 {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .stagger-3 {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .stagger-4 {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 
 .stagger-5 {
-  transition-delay: 0.5s;
+  transition-delay: 0.25s;
 }
 
 .stagger-6 {
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
 }
 
 /* Enhanced card hover effects */
