@@ -221,26 +221,16 @@ export const info = {
 			description:
 				"A modern, high-performance portfolio website showcasing my expertise in frontend development and performance optimization. Built with Astro for optimal loading speeds and SEO.",
 			technologies: ["Astro", "TypeScript", "Tailwind CSS", "Netlify"],
-			achievements: [
-				"100% Lighthouse performance score",
-				"Fully responsive design",
-				"SEO optimized",
-			],
 		},
 		{
-			title: "Distributed Job Queue System",
+			title: "Instagram Recipe Extractor",
 			isFeatured: true,
-			thumbnail: "/assets/images/queue.png",
-			githubUrl: "https://github.com/AlexSKorn/JobQueueGo",
+			thumbnail: "/assets/images/instagramimage.png",
+			githubUrl: "https://github.com/AlexSKorn/InstagramRecipeExtractor",
 			liveUrl: "",
 			description:
-				"A high-throughput distributed job processing system built in Go. Demonstrates my expertise in concurrent programming, system design, and performance optimization at scale.",
-			technologies: ["Go", "Redis", "Docker", "Prometheus"],
-			achievements: [
-				"Processes 10k+ jobs/minute",
-				"Built-in monitoring and metrics",
-				"Horizontally scalable architecture",
-			],
+				"This repository provides a tool for extracting recipes from Instagram Reels and organizing them into structured Markdown files using local AI. Users can paste a public Reel URL to automatically generate ingredients and instructions, which can then be saved and browsed within the application.",
+			technologies: ["Python", "React", "Typescript", "Docker", "Ollama"],
 		},
 		{
 			title: "Full-Stack Pastebin Application",
@@ -251,11 +241,6 @@ export const info = {
 			description:
 				"A secure, feature-rich pastebin application showcasing full-stack development skills. Includes user authentication, syntax highlighting, and real-time collaboration features.",
 			technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
-			achievements: [
-				"Real-time collaboration",
-				"Multi-language syntax highlighting",
-				"Secure user authentication",
-			],
 		},
 	],
 
