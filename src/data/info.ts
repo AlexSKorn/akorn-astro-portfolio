@@ -1,12 +1,8 @@
 export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
-	jobDescription: "Full-Stack Software Engineer",
-	about: `Full-stack Software Engineer with 8+ years of experience specializing in high-throughput distributed systems,
-		cloud development, AI, and full-stack solutions. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker,
-		and Kubernetes, I bring a robust foundation in software engineering principles and a track record of leading technical
-		projects to completion. As a proactive problem-solver, I excel at delivering scalable, reliable solutions and thrive in collaborative,
-		innovative environments, constantly seeking opportunities to enhance my skills and drive impactful results.
+	jobDescription: "Full-Stack Engineer & Technical Consultant",
+	about: `I bridge the gap between technical excellence and business outcomes. With 8+ years spanning consulting and product engineering, I've partnered with executives and stakeholders to translate complex business needs into scalable solutions—while leading technical teams at Okta, Slalom, and Discover. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker, and Kubernetes, I thrive in collaborative environments where I can drive both technical innovation and business impact.
   `,
 
 	experience: [
@@ -16,12 +12,12 @@ export const info = {
 			startDate: "August 2024",
 			endDate: "Current",
 			description: [
-				"-  Enhanced platform performance by 40% under a peak load of 5,000+ RPS by implementing an optimized caching strategy, consistently maintaining P99 latencies below 300ms.",
+				"-  Collaborate with product managers and stakeholders to prioritize features that deliver maximum customer value while ensuring platform reliability",
+				"-  Enhanced platform performance by 40% under peak load of 5,000+ RPS by implementing optimized caching strategy, maintaining P99 latencies below 300ms",
 				"-  Engineered and maintained extensibility infrastructure, empowering thousands of developers to run custom code in their authentication and authorization flows",
-				"-  Drove a 50-80% reduction in CI/CD build and test times by re-architecting the pipeline with parallelized jobs and improved caching, accelerating developer velocity",
-				"-  Enhanced and developed metrics-driven monitoring and alerting systems, enabling real-time performance monitoring and streamlined troubleshooting",
-				"-  Reduced Kubernetes cluster startup time from 2 minutes 45 seconds to 1 minute 30 seconds by parallelizing pod initialization and optimizing resource allocation",
-				"-  Led efforts to modernize and implement AI solutions, boosting developer productivity, enhancing platform documentation, and improving developer velocity and experience",
+				"-  Drove a 50-80% reduction in CI/CD build and test times by re-architecting the pipeline with parallelized jobs and improved caching",
+				"-  Led efforts to modernize and implement AI solutions, boosting developer productivity and enhancing platform documentation",
+				"-  Reduced Kubernetes cluster startup time from 2m 45s to 1m 30s by parallelizing pod initialization and optimizing resource allocation",
 			],
 			skills: [
 				"Go",
@@ -49,13 +45,12 @@ export const info = {
 			startDate: "March 2022",
 			endDate: "August 2024",
 			description: [
-				"-  Led technical initiatives as a lead engineer, collaborating with stakeholders to deliver effective solutions",
-				"-  Developed secure, high-traffic, GraphQL, REST and gRPC, APIs supporting millions of users and billions of daily requests",
-				"-  Engineered and managed cloud-based infrastructure ensuring high availability, scalability, and cost optimization.",
-				"-  Mentored and coached junior engineers to help them grow and develop their technical skills.",
-				"-  Built scalable, real-time data pipelines to support large-scale data processing for AI/ML and BI applications.",
-				"-  Instrumented APIs with observability tools, enabling real-time performance monitoring, metrics-driven optimization, and streamlined troubleshooting.",
-				"-  Partnered with sales and leadership to conduct discovery, understand client requirements, and architect solutions that addressed client needs.",
+				"-  Partnered with sales and leadership across multiple client engagements to conduct discovery sessions, understand business requirements, and architect tailored solutions that addressed client needs",
+				"-  Served as technical advisor to enterprise clients, presenting solutions to executive stakeholders and guiding technology strategy decisions",
+				"-  Led technical initiatives as a lead engineer, collaborating with cross-functional teams to translate business needs into scalable, secure systems",
+				"-  Developed secure, high-traffic GraphQL, REST, and gRPC APIs supporting millions of users and billions of daily requests",
+				"-  Mentored and coached junior engineers to help them grow and develop their technical skills",
+				"-  Built scalable, real-time data pipelines to support large-scale data processing for AI/ML and BI applications",
 			],
 			skills: [
 				"Go",
@@ -86,9 +81,9 @@ export const info = {
 			startDate: "July 2021",
 			endDate: "March 2022",
 			description: [
-				"-  Engineered secure REST APIs supporting millions of daily requests and developed user interface functionality.",
-				"-  Deployed and managed cloud infrastructure and CI/CD pipelines supporting blue/green deployment.",
-				"-  Built a product from scratch, and successfully delivered and launched beta and MVP versions.",
+				"-  Built a new financial product from scratch, partnering with product owners to define requirements and successfully delivering beta and MVP versions to market",
+				"-  Engineered secure REST APIs supporting millions of daily requests and developed user interface functionality",
+				"-  Deployed and managed cloud infrastructure and CI/CD pipelines supporting blue/green deployment",
 			],
 			skills: [
 				"Typescript",
@@ -106,9 +101,9 @@ export const info = {
 			startDate: "Oct 2020",
 			endDate: "July 2021",
 			description: [
-				"-  Developed a customer-facing API portal, enabling users to sign up, track usage, monitor performance, and optimize their API experience.",
-				"-  Implemented CI/CD pipelines to reduce deployment time from 15 minutes to 3 minutes.",
-				"-  Developed internal tools and SDKs to optimize developer experience throughout the organization.",
+				"-  Built and launched a customer-facing API portal, enabling external users to sign up, track usage, monitor performance, and optimize their API experience",
+				"-  Implemented CI/CD pipelines to reduce deployment time from 15 minutes to 3 minutes",
+				"-  Developed internal tools and SDKs to optimize developer experience throughout the organization",
 			],
 			skills: [
 				"Typescript",
@@ -221,6 +216,10 @@ export const info = {
 			description:
 				"A modern, high-performance portfolio website showcasing my expertise in frontend development and performance optimization. Built with Astro for optimal loading speeds and SEO.",
 			technologies: ["Astro", "TypeScript", "Tailwind CSS", "Netlify"],
+			achievements: [
+				"100% Lighthouse performance score",
+				"Zero JavaScript bundle for instant loading",
+			],
 		},
 		{
 			title: "Instagram Recipe Extractor",
@@ -231,6 +230,10 @@ export const info = {
 			description:
 				"This repository provides a tool for extracting recipes from Instagram Reels and organizing them into structured Markdown files using local AI. Users can paste a public Reel URL to automatically generate ingredients and instructions, which can then be saved and browsed within the application.",
 			technologies: ["Python", "React", "Typescript", "Docker", "Ollama"],
+			achievements: [
+				"Local AI processing for privacy",
+				"Automatic recipe structuring from video content",
+			],
 		},
 		{
 			title: "Full-Stack Pastebin Application",
@@ -241,6 +244,10 @@ export const info = {
 			description:
 				"A secure, feature-rich pastebin application showcasing full-stack development skills. Includes user authentication, syntax highlighting, and real-time collaboration features.",
 			technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
+			achievements: [
+				"Secure authentication with session management",
+				"Real-time collaboration features",
+			],
 		},
 	],
 
