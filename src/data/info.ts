@@ -236,14 +236,14 @@ export const info = {
 			],
 		},
 		{
-			title: "Full-Stack Pastebin Application",
+			title: "Tailscale MCP Server",
 			isFeatured: true,
-			thumbnail: "/assets/images/pastebin.png",
-			githubUrl: "https://github.com/AlexSKorn/paste-bin",
+			thumbnail: "/assets/images/tailscale.png",
+			githubUrl: "https://github.com/AlexSKorn/TailscaleMCP",
 			liveUrl: "",
 			description:
-				"A secure, feature-rich pastebin application showcasing full-stack development skills. Includes user authentication, syntax highlighting, and real-time collaboration features.",
-			technologies: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma"],
+				"An MCP server for Tailscale that allows you to interact with your Tailscale network using AI.",
+			technologies: ["Python", "FastMCP", "Docker", "Tailscale", "MCP"],
 			achievements: [
 				"Secure authentication with session management",
 				"Real-time collaboration features",
