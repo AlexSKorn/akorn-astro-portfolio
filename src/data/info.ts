@@ -245,8 +245,8 @@ export const info = {
 				"An MCP server for Tailscale that allows you to interact with your Tailscale network using AI.",
 			technologies: ["Python", "FastMCP", "Docker", "Tailscale", "MCP"],
 			achievements: [
-				"Secure authentication with session management",
-				"Real-time collaboration features",
+				"Integrated private networking with AI assistants",
+				"Robust, automated local API diagnostics",
 			],
 		},
 	],
