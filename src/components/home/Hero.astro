@@ -6,9 +6,6 @@ const { name, about } = Astro.props as IHeroProps;
 ---
 
 <section class="pt-8 sm:pt-16 pb-8 sm:pb-16 relative overflow-hidden">
-	<!-- Gradient background glow -->
-	<div class="hero-gradient-bg" aria-hidden="true"></div>
-	
 	<div
 		class="flex flex-col lg:flex-row items-start justify-between gap-12 mb-12"
 	>
@@ -29,7 +26,7 @@ const { name, about } = Astro.props as IHeroProps;
 				Hey, I'm
 			</p>
 			<h1
-				class="mb-4 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent fade-in-up stagger-2"
+				class="mb-4 fade-in-up stagger-2"
 			>
 				{name}
 			</h1>
