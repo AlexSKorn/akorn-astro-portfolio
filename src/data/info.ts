@@ -1,7 +1,7 @@
 export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
-	jobDescription: "Full-Stack Engineer & Technical Consultant",
+	jobDescription: "Backend Engineer",
 	about: `I bridge the gap between technical excellence and business outcomes. With 8+ years spanning consulting and product engineering, I've partnered with executives and stakeholders to translate complex business needs into scalable solutions—while leading technical teams at Okta, Slalom, and Discover. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker, and Kubernetes, I thrive in collaborative environments where I can drive both technical innovation and business impact.
   `,
 
