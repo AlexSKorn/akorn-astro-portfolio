@@ -2,15 +2,50 @@ export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
 	jobDescription: "Backend Engineer",
+
+	// Headline metrics shown in the hero impact panel — pulled from real experience bullets
+	stats: [
+		{ value: "8+", label: "Years Experience" },
+		{ value: "5K+", label: "Peak RPS Handled" },
+		{ value: "1B+", label: "Daily Requests" },
+		{ value: "40%", label: "Perf Gains" },
+	],
+
 	about: `I bridge the gap between technical excellence and business outcomes. With 8+ years spanning consulting and product engineering, I've partnered with executives and stakeholders to translate complex business needs into scalable solutions—while leading technical teams at Okta, Slalom, and Discover. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker, and Kubernetes, I thrive in collaborative environments where I can drive both technical innovation and business impact.
   `,
 
 	experience: [
 		{
+			name: "Twilio - Senior Software Engineer, Agent Identity (Technical Lead)",
+			location: "Austin, TX (remote)",
+			startDate: "April 2026",
+			endDate: "Current",
+			description: [
+				"-  Drive organization-wide adoption of AI-powered workflows, agentic loops, and automation, streamlining engineering processes and accelerating delivery across teams",
+				"-  Built and launched a greenfield AI Agent Identity platform from zero to production, scaling to support millions of authorization/authentication requests per day",
+				"-  Contributed to industry working groups defining emerging agent identity standards, then implemented those standards within the product",
+				"-  Designed and implemented the observability, monitoring, and alerting framework, enabling proactive issue detection and rapid incident response",
+			],
+			skills: [
+				"Go",
+				"TypeScript",
+				"AWS",
+				"Kubernetes",
+				"Docker",
+				"Terraform",
+				"Grafana",
+				"DynamoDB",
+				"OpenSearch",
+				"LangGraph",
+				"gRPC",
+				"REST",
+			],
+		},
+		{
 			name: "Okta - Senior Software Engineer (Auth0 Extensibility)",
 			location: "San Francisco, CA (remote)",
 			startDate: "August 2024",
-			endDate: "Current",
+			endDate: "April 2026",
 			description: [
 				"-  Collaborate with product managers and stakeholders to prioritize features that deliver maximum customer value while ensuring platform reliability",
 				"-  Enhanced platform performance by 40% under peak load of 5,000+ RPS by implementing optimized caching strategy, maintaining P99 latencies below 300ms",
@@ -112,7 +147,7 @@ export const info = {
 				"React",
 				"AWS",
 				"PostgreSQL",
-				"DyanmoDB",
+				"DynamoDB",
 			],
 		},
 		{
@@ -293,10 +328,10 @@ export const info = {
 		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark" },
 
 		// Monitoring/CI
+		{ name: "Grafana", icon: "devicon-grafana-plain" },
 		{ name: "DataDog", icon: "devicon-datadog-plain" },
 		{ name: "Jenkins", icon: "devicon-jenkins-line" },
 		{ name: "Argo CD", icon: "devicon-argocd-plain" },
-		{ name: "CloudWatch", icon: "devicon-amazonwebservices-plain-wordmark" },
 		{ name: "OpenTelemetry", icon: "devicon-opentelemetry-plain" },
 		{ name: "GitHub Actions", icon: "si si-githubactions" },
 	],

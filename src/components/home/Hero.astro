@@ -3,9 +3,17 @@ import { IHeroProps } from "@types";
 import { info } from "@data";
 
 const { name, about } = Astro.props as IHeroProps;
+
+// Derive company names from experience (e.g. "Okta - Senior..." -> "Okta")
+const companies = info.experience.map((e) => e.name.split(" - ")[0]);
+const currentCompany = companies[0];
+const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 ---
 
 <section class="pt-8 sm:pt-16 pb-8 sm:pb-16 relative overflow-hidden">
+	<!-- Ambient gradient glow behind the hero -->
+	<div class="hero-gradient-bg" aria-hidden="true"></div>
+
 	<div
 		class="flex flex-col lg:flex-row items-start justify-between gap-12 mb-12"
 	>
@@ -69,6 +77,49 @@ const { name, about } = Astro.props as IHeroProps;
 				</a>
 			</div>
 		</div>
+
+		<!-- Right: Impact panel -->
+		<div class="w-full lg:w-[22rem] flex-shrink-0 fade-in-up stagger-3">
+			<div class="glass-card rounded-2xl p-6 shadow-lg">
+				<!-- Current role -->
+				<p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">
+					Currently
+				</p>
+				<p class="text-lg font-semibold text-gray-800 dark:text-gray-100 font-outfit mb-6">
+					Senior Engineer <span class="text-blue-500 dark:text-blue-400">@ {currentCompany}</span>
+				</p>
+
+				<!-- Stats grid -->
+				<div class="grid grid-cols-2 gap-3">
+					{
+						info.stats.map((stat) => (
+							<div class="rounded-xl bg-white/60 dark:bg-gray-700/40 border border-gray-100 dark:border-gray-600 p-4 text-center">
+								<div class="text-2xl font-bold text-blue-600 dark:text-blue-400 font-outfit">
+									{stat.value}
+								</div>
+								<div class="text-xs text-gray-600 dark:text-gray-300 mt-1 leading-tight">
+									{stat.label}
+								</div>
+							</div>
+						))
+					}
+				</div>
+
+				<!-- Previously -->
+				<p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mt-6 mb-2">
+					Previously
+				</p>
+				<div class="flex flex-wrap gap-2">
+					{
+						previousCompanies.map((company) => (
+							<span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs font-medium rounded-full">
+								{company}
+							</span>
+						))
+					}
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -78,4 +129,3 @@ const { name, about } = Astro.props as IHeroProps;
 		{about}
 	</p>
 </div>
-
