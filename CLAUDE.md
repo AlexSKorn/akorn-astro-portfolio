@@ -3,7 +3,7 @@
 High-performance portfolio website built with Astro, TypeScript, and Tailwind CSS.
 
 **Live**: https://akorn.netlify.app/  
-**Stack**: Astro 5.16 • TypeScript (strict) • Tailwind CSS 6 • Node 22
+**Stack**: Astro 5.18 • TypeScript (strict) • Tailwind CSS 6 • Node 24
 
 ## Project Structure
 
@@ -39,7 +39,7 @@ npm run build    # Build for production
 npm run preview  # Preview production build
 ```
 
-**Node Version**: Use `nvm use` (reads `.nvmrc` for v22)
+**Node Version**: Use `nvm use` (reads `.nvmrc` for v24)
 
 ## Additional Documentation
 

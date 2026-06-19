@@ -10,7 +10,7 @@ High-performance personal portfolio website showcasing professional experience, 
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS 6
 - **Deployment**: Netlify
-- **Node**: v22 (see `.nvmrc`)
+- **Node**: v24 (see `.nvmrc`)
 
 ## 📋 Features
 
@@ -70,7 +70,7 @@ These files help AI assistants understand the codebase, follow conventions, and 
 
 ### Prerequisites
 
-- Node.js v22 (use `nvm use` to load from `.nvmrc`)
+- Node.js v24 (use `nvm use` to load from `.nvmrc`)
 - npm
 
 ### Getting Started
@@ -113,7 +113,7 @@ The site automatically deploys to Netlify when changes are pushed to the `main` 
 **Build settings**:
 - Build command: `npm run build`
 - Publish directory: `dist`
-- Node version: 22 (from `.nvmrc`)
+- Node version: 24 (from `.nvmrc`)
 
 ## 📝 License
 
