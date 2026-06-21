@@ -29,10 +29,6 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 {title && <title>{`${title} | ${info.name}`}</title>}
 {title && <meta name="title" content={`${title} | ${info.name}`} />}
 {description && <meta name="description" content={description} />}
-<meta
-	name="keywords"
-	content={`software engineer, web developer, ${info.name}, portfolio, projects, full stack, typescript, go, react, aws`}
-/>
 <meta name="author" content={info.name} />
 
 <!-- Open Graph -->
@@ -59,6 +55,19 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 		<meta name="twitter:image" content={`${info.baseUrl}${ogImageUrl}`} />
 	)
 }
+
+<!-- Structured data: Person schema for richer search results -->
+<script
+	type="application/ld+json"
+	set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Person",
+		name: info.name,
+		jobTitle: info.jobDescription,
+		url: info.baseUrl,
+		sameAs: [info.socialMedia.linkedin, info.socialMedia.github],
+	})}
+/>
 
 <!-- preload assets -->
 <link

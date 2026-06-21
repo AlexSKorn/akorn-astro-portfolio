@@ -89,24 +89,8 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 					Senior Engineer <span class="text-blue-500 dark:text-blue-400">@ {currentCompany}</span>
 				</p>
 
-				<!-- Stats grid -->
-				<div class="grid grid-cols-2 gap-3">
-					{
-						info.stats.map((stat) => (
-							<div class="rounded-xl bg-white/60 dark:bg-gray-700/40 border border-gray-100 dark:border-gray-600 p-4 text-center">
-								<div class="text-2xl font-bold text-blue-600 dark:text-blue-400 font-outfit">
-									{stat.value}
-								</div>
-								<div class="text-xs text-gray-600 dark:text-gray-300 mt-1 leading-tight">
-									{stat.label}
-								</div>
-							</div>
-						))
-					}
-				</div>
-
 				<!-- Previously -->
-				<p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mt-6 mb-2">
+				<p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
 					Previously
 				</p>
 				<div class="flex flex-wrap gap-2">

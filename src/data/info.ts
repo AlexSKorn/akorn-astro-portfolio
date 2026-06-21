@@ -1,18 +1,9 @@
 export const info = {
 	baseUrl: "https://akorn.netlify.app/",
 	name: "Alex Korn",
-	jobDescription: "Backend Engineer",
+	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
 
-	// Headline metrics shown in the hero impact panel — pulled from real experience bullets
-	stats: [
-		{ value: "8+", label: "Years Experience" },
-		{ value: "5K+", label: "Peak RPS Handled" },
-		{ value: "1B+", label: "Daily Requests" },
-		{ value: "40%", label: "Perf Gains" },
-	],
-
-	about: `I bridge the gap between technical excellence and business outcomes. With 8+ years spanning consulting and product engineering, I've partnered with executives and stakeholders to translate complex business needs into scalable solutions—while leading technical teams at Okta, Slalom, and Discover. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker, and Kubernetes, I thrive in collaborative environments where I can drive both technical innovation and business impact.
-  `,
+	about: `I bridge the gap between technical excellence and business outcomes. With 8+ years spanning consulting and product engineering, I've partnered with executives and stakeholders to translate complex business needs into scalable solutions while leading technical teams at Twilio, Okta, Slalom, and Discover. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker, and Kubernetes, I thrive in collaborative environments where I can drive both technical innovation and business impact.`,
 
 	experience: [
 		{
@@ -226,13 +217,6 @@ export const info = {
 			endDate: "2018",
 			description: ["Bachelors in Computer Science"],
 		},
-		{
-			name: "Eden Prairie High School",
-			location: "Eden Prairie",
-			startDate: "2010",
-			endDate: "2014",
-			description: ["High School Diploma"],
-		},
 	],
 
 	socialMedia: {
@@ -259,7 +243,7 @@ export const info = {
 		{
 			title: "Instagram Recipe Extractor",
 			isFeatured: true,
-			thumbnail: "/assets/images/instagramimage.png",
+			thumbnail: "/assets/images/instagramimage.webp",
 			githubUrl: "https://github.com/AlexSKorn/InstagramRecipeExtractor",
 			liveUrl: "",
 			description:
@@ -273,7 +257,7 @@ export const info = {
 		{
 			title: "Tailscale MCP Server",
 			isFeatured: true,
-			thumbnail: "/assets/images/tailscale.png",
+			thumbnail: "/assets/images/tailscale.webp",
 			githubUrl: "https://github.com/AlexSKorn/TailscaleMCP",
 			liveUrl: "",
 			description:
