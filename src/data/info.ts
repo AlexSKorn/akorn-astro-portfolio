@@ -3,7 +3,7 @@ export const info = {
 	name: "Alex Korn",
 	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
 
-	about: `I bridge the gap between technical excellence and business outcomes. With 8+ years spanning consulting and product engineering, I've partnered with executives and stakeholders to translate complex business needs into scalable solutions while leading technical teams at Twilio, Okta, Slalom, and Discover. Skilled in TypeScript/JavaScript, Go, React, AWS, Azure, Docker, and Kubernetes, I thrive in collaborative environments where I can drive both technical innovation and business impact.`,
+	about: `Senior software engineer specializing in high-scale distributed systems and AI-native platforms. I'm currently building a greenfield AI Agent Identity platform at Twilio, taking it from zero to production. Previously I architected serverless infrastructure at Okta/Auth0 serving billions of authentication requests a day at sub-200ms latency. Across 8+ years at Twilio, Okta, Slalom, and Discover, I've owned products end-to-end — architecture, APIs, infrastructure, and the observability that keeps them reliable. Beyond building AI products, I lead adoption of AI-powered engineering workflows, agentic coding loops, automation, and tools like Claude Code, to accelerate how teams ship.`,
 
 	experience: [
 		{
