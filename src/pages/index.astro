@@ -6,17 +6,19 @@ import Hero from "@components/home/Hero.astro";
 import About from "@components/home/About.astro";
 import Experience from "@components/home/Experience.astro";
 import TechnicalSkills from "@components/home/TechnicalSkills.astro";
-import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
+// TODO: re-enable when better projects are ready (see Featured Projects section below)
+// import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import Contact from "@components/home/Contact.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Technologies from "@components/home/Technologies.astro";
 
-const featureProjects = info.projects.reduce((accumulator, project) => {
-	if (accumulator.length < 6 && project.isFeatured) {
-		accumulator.push(project);
-	}
-	return accumulator;
-}, []);
+// TODO: re-enable when better projects are ready (see Featured Projects section below)
+// const featureProjects = info.projects.reduce((accumulator, project) => {
+// 	if (accumulator.length < 6 && project.isFeatured) {
+// 		accumulator.push(project);
+// 	}
+// 	return accumulator;
+// }, []);
 ---
 
 <Layout>
@@ -32,8 +34,10 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
 
 	<About />
 
-	<!-- Featured Projects Section -->
-	<section id="projects" class="my-10" aria-labelledby="projects-title">
+	{/* TODO: Featured Projects hidden for now — re-enable (along with the
+	   ProjectsWrapper import and featureProjects const above) once better
+	   projects are ready to display. */}
+	{/* <section id="projects" class="my-10" aria-labelledby="projects-title">
 		<div class="flex items-center mb-8 fade-in-up">
 			<div class="section-title-bar mr-4"></div>
 			<h2
@@ -44,7 +48,7 @@ const featureProjects = info.projects.reduce((accumulator, project) => {
 			</h2>
 		</div>
 		<ProjectsWrapper projects={featureProjects} />
-	</section>
+	</section> */}
 
 	<section id="experience" aria-labelledby="experience-title">
 		<Experience title={"EXPERIENCE"} details={info.experience} />

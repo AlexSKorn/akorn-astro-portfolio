@@ -1,5 +1,5 @@
 export const info = {
-	baseUrl: "https://akorn.netlify.app/",
+	baseUrl: "https://akorn.netlify.app",
 	name: "Alex Korn",
 	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
 
@@ -13,9 +13,9 @@ export const info = {
 			endDate: "Current",
 			description: [
 				"-  Drive organization-wide adoption of AI-powered workflows, agentic loops, and automation, streamlining engineering processes and accelerating delivery across teams",
-				"-  Built and launched a greenfield AI Agent Identity platform from zero to production, scaling to support millions of authorization/authentication requests per day",
-				"-  Contributed to industry working groups defining emerging agent identity standards, then implemented those standards within the product",
-				"-  Designed and implemented the observability, monitoring, and alerting framework, enabling proactive issue detection and rapid incident response",
+				"-  Build and launch a greenfield AI Agent Identity platform from zero to production, scaling to support millions of authorization/authentication requests per day",
+				"-  Contribute to industry working groups defining emerging agent identity standards, then implement those standards within the product",
+				"-  Design and implement the observability, monitoring, and alerting framework, enabling proactive issue detection and rapid incident response",
 			],
 			skills: [
 				"Go",
@@ -38,7 +38,7 @@ export const info = {
 			startDate: "August 2024",
 			endDate: "April 2026",
 			description: [
-				"-  Collaborate with product managers and stakeholders to prioritize features that deliver maximum customer value while ensuring platform reliability",
+				"-  Collaborated with product managers and stakeholders to prioritize features that delivered maximum customer value while ensuring platform reliability",
 				"-  Enhanced platform performance by 40% under peak load of 5,000+ RPS by implementing optimized caching strategy, maintaining P99 latencies below 300ms",
 				"-  Engineered and maintained extensibility infrastructure, empowering thousands of developers to run custom code in their authentication and authorization flows",
 				"-  Drove a 50-80% reduction in CI/CD build and test times by re-architecting the pipeline with parallelized jobs and improved caching",

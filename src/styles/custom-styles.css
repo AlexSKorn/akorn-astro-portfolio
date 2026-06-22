@@ -359,11 +359,6 @@ html.dark .hero-gradient-bg {
     radial-gradient(ellipse 800px 350px at -10% 60%, rgba(59, 130, 246, 0.1) 0%, transparent 45%);
 }
 
-/* Available badge - clean style without glow */
-.available-badge {
-  /* Glow removed for cleaner appearance */
-}
-
 /* CTA Button enhancements */
 .cta-primary {
   position: relative;
