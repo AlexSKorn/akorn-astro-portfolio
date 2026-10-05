@@ -1,3 +1,5 @@
+import type { ITechnology } from "@types";
+
 export const info = {
 	baseUrl: "https://akorn.netlify.app",
 	name: "Alex Korn",
@@ -9,7 +11,7 @@ export const info = {
 		{
 			name: "Twilio - Senior Software Engineer, Agent Identity (Technical Lead)",
 			location: "Austin, TX (remote)",
-			startDate: "April 2026",
+			startDate: "Apr 2026",
 			endDate: "Current",
 			description: [
 				"-  Drive organization-wide adoption of AI-powered workflows, agentic loops, and automation, streamlining engineering processes and accelerating delivery across teams",
@@ -35,8 +37,8 @@ export const info = {
 		{
 			name: "Okta - Senior Software Engineer (Auth0 Extensibility)",
 			location: "San Francisco, CA (remote)",
-			startDate: "August 2024",
-			endDate: "April 2026",
+			startDate: "Aug 2024",
+			endDate: "Apr 2026",
 			description: [
 				"-  Collaborated with product managers and stakeholders to prioritize features that delivered maximum customer value while ensuring platform reliability",
 				"-  Enhanced platform performance by 40% under peak load of 5,000+ RPS by implementing optimized caching strategy, maintaining P99 latencies below 300ms",
@@ -47,8 +49,8 @@ export const info = {
 			],
 			skills: [
 				"Go",
-				"Typescript",
-				"NodeJs",
+				"TypeScript",
+				"Node.js",
 				"React",
 				"Kubernetes",
 				"Docker",
@@ -59,7 +61,7 @@ export const info = {
 				"PostgreSQL",
 				"MongoDB",
 				"Snowflake",
-				"DataDog",
+				"Datadog",
 				"Jenkins",
 				"ArgoCD",
 				"GitHub Actions",
@@ -68,8 +70,8 @@ export const info = {
 		{
 			name: "Slalom - Senior Software Engineering Consultant",
 			location: "Austin, TX (remote)",
-			startDate: "March 2022",
-			endDate: "August 2024",
+			startDate: "Mar 2022",
+			endDate: "Aug 2024",
 			description: [
 				"-  Partnered with sales and leadership across multiple client engagements to conduct discovery sessions, understand business requirements, and architect tailored solutions that addressed client needs",
 				"-  Served as technical advisor to enterprise clients, presenting solutions to executive stakeholders and guiding technology strategy decisions",
@@ -84,7 +86,7 @@ export const info = {
 				"C#",
 				"Python",
 				"Django",
-				"Nodejs",
+				"Node.js",
 				".NET",
 				"React",
 				"AWS",
@@ -104,16 +106,16 @@ export const info = {
 		{
 			name: "Discover Financial Services - Senior Software Engineer",
 			location: "Austin, TX (remote)",
-			startDate: "July 2021",
-			endDate: "March 2022",
+			startDate: "Jul 2021",
+			endDate: "Mar 2022",
 			description: [
 				"-  Built a new financial product from scratch, partnering with product owners to define requirements and successfully delivering beta and MVP versions to market",
 				"-  Engineered secure REST APIs supporting millions of daily requests and developed user interface functionality",
 				"-  Deployed and managed cloud infrastructure and CI/CD pipelines supporting blue/green deployment",
 			],
 			skills: [
-				"Typescript",
-				"Nodejs",
+				"TypeScript",
+				"Node.js",
 				"React",
 				"AWS",
 				"Jenkins",
@@ -125,14 +127,14 @@ export const info = {
 			name: "Cox Automotive - Software Engineer II",
 			location: "Austin, TX (remote)",
 			startDate: "Oct 2020",
-			endDate: "July 2021",
+			endDate: "Jul 2021",
 			description: [
 				"-  Built and launched a customer-facing API portal, enabling external users to sign up, track usage, monitor performance, and optimize their API experience",
 				"-  Implemented CI/CD pipelines to reduce deployment time from 15 minutes to 3 minutes",
 				"-  Developed internal tools and SDKs to optimize developer experience throughout the organization",
 			],
 			skills: [
-				"Typescript",
+				"TypeScript",
 				"C#",
 				".NET",
 				"React",
@@ -147,16 +149,16 @@ export const info = {
 			startDate: "Jan 2019",
 			endDate: "Oct 2020",
 			description: [
-				"-  Developed internal full-stack applications to support engineers in the development of research chemicals.",
-				"-  Engineered and streamlined application deployment and automated testing to leverage Azure cloud resources.",
-				"-  Developed, designed, and tested REST APIs and implemented user interface functionality.",
+				"-  Developed internal full-stack applications to support engineers in the development of research chemicals",
+				"-  Engineered and streamlined application deployment and automated testing to leverage Azure cloud resources",
+				"-  Developed, designed, and tested REST APIs and implemented user interface functionality",
 			],
 			skills: [
-				"Javascript",
+				"JavaScript",
 				"C#",
 				".NET",
 				"Node.js",
-				"JQuery",
+				"jQuery",
 				"Azure",
 				"MySQL",
 			],
@@ -167,16 +169,16 @@ export const info = {
 			startDate: "Jun 2018",
 			endDate: "Dec 2018",
 			description: [
-				"-  Created REST APIs for internal use, streamlining application development and integration.",
-				"-  Modernized Ameriprise’s cloud approach from on-prem to leveraging Docker and Kubernetes on AWS.",
+				"-  Created REST APIs for internal use, streamlining application development and integration",
+				"-  Modernized Ameriprise’s cloud approach from on-prem to leveraging Docker and Kubernetes on AWS",
 			],
 			skills: [
 				"Java",
 				"Spring",
 				"Docker",
 				"Kubernetes",
-				"JQuery",
-				"ElastricSearch",
+				"jQuery",
+				"Elasticsearch",
 				"Kibana",
 				"Azure",
 				"MySQL",
@@ -188,14 +190,14 @@ export const info = {
 			startDate: "May 2017",
 			endDate: "Aug 2017",
 			description: [
-				"-  Built and launched a troubleshooting system to help users fix common issues without contacting support.",
+				"-  Built and launched a troubleshooting system to help users fix common issues without contacting support",
 			],
 			skills: [
-				"Javascript",
+				"JavaScript",
 				"C#",
 				".NET",
 				"Node.js",
-				"JQuery",
+				"jQuery",
 				"Azure",
 				"MySQL",
 			],
@@ -215,7 +217,7 @@ export const info = {
 			location: "St. Peter, MN",
 			startDate: "2014",
 			endDate: "2018",
-			description: ["Bachelors in Computer Science"],
+			description: ["Bachelor's in Computer Science"],
 		},
 	],
 
@@ -248,7 +250,7 @@ export const info = {
 			liveUrl: "",
 			description:
 				"This repository provides a tool for extracting recipes from Instagram Reels and organizing them into structured Markdown files using local AI. Users can paste a public Reel URL to automatically generate ingredients and instructions, which can then be saved and browsed within the application.",
-			technologies: ["Python", "React", "Typescript", "Docker", "Ollama"],
+			technologies: ["Python", "React", "TypeScript", "Docker", "Ollama"],
 			achievements: [
 				"Local AI processing for privacy",
 				"Automatic recipe structuring from video content",
@@ -271,52 +273,43 @@ export const info = {
 	],
 
 	technologies: [
-		// Languages
-		{ name: "TypeScript", icon: "devicon-typescript-plain" },
-		{ name: "Go", icon: "devicon-go-original-wordmark" },
-		{ name: "Python", icon: "devicon-python-plain" },
+		{ name: "TypeScript", icon: "devicon-typescript-plain", category: "Languages" },
+		{ name: "Go", icon: "devicon-go-original-wordmark", category: "Languages" },
+		{ name: "Python", icon: "devicon-python-plain", category: "Languages" },
 
-		// Frameworks
-		{ name: "React", icon: "devicon-react-original-wordmark" },
-		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark" },
-		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
-		{ name: "TailwindCSS", icon: "devicon-tailwindcss-plain" },
-		{ name: "LangGraph", icon: "si si-langchain" },
-		{ name: "Django", icon: "devicon-django-plain" },
+		{ name: "React", icon: "devicon-react-original-wordmark", category: "Frameworks" },
+		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark", category: "Frameworks" },
+		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark", category: "Frameworks" },
+		{ name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", category: "Frameworks" },
+		{ name: "LangGraph", icon: "si si-langchain", category: "Frameworks" },
+		{ name: "Django", icon: "devicon-django-plain", category: "Frameworks" },
 
-		// Databases & Caching
-		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark" },
-		{ name: "MongoDB", icon: "devicon-mongodb-plain-wordmark" },
-		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark" },
-		{ name: "Redis", icon: "devicon-redis-plain-wordmark" },
-		{ name: "Pinecone", icon: "/assets/icons/pinecone.svg" },
-		{ name: "Snowflake", icon: "si si-snowflake" },
+		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark", category: "Databases & Caching" },
+		{ name: "MongoDB", icon: "devicon-mongodb-plain-wordmark", category: "Databases & Caching" },
+		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark", category: "Databases & Caching" },
+		{ name: "Redis", icon: "devicon-redis-plain-wordmark", category: "Databases & Caching" },
+		{ name: "Pinecone", icon: "/assets/icons/pinecone.svg", category: "Databases & Caching" },
+		{ name: "Snowflake", icon: "si si-snowflake", category: "Databases & Caching" },
 
-		// Artificial Intelligence
-		{ name: "GitHub Copilot", icon: "si si-githubcopilot" },
-		{ name: "Cursor", icon: "si si-cursor" },
-		{ name: "Claude Code", icon: "si si-anthropic" },
-		{ name: "Gemini", icon: "si si-googlegemini" },
-		{ name: "Hugging Face", icon: "si si-huggingface" },
-		{
-			name: "Amazon Bedrock",
-			icon: "devicon-amazonwebservices-plain-wordmark",
-		},
+		{ name: "GitHub Copilot", icon: "si si-githubcopilot", category: "Artificial Intelligence" },
+		{ name: "Cursor", icon: "si si-cursor", category: "Artificial Intelligence" },
+		{ name: "Claude Code", icon: "si si-anthropic", category: "Artificial Intelligence" },
+		{ name: "Gemini", icon: "si si-googlegemini", category: "Artificial Intelligence" },
+		{ name: "Hugging Face", icon: "si si-huggingface", category: "Artificial Intelligence" },
+		{ name: "Amazon Bedrock", icon: "/assets/icons/bedrock.svg", category: "Artificial Intelligence" },
 
-		// Cloud & Infrastructure
-		{ name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark" },
-		{ name: "Azure", icon: "devicon-azure-plain-wordmark" },
-		{ name: "Docker", icon: "devicon-docker-plain-wordmark" },
-		{ name: "Kubernetes", icon: "devicon-kubernetes-plain-wordmark" },
-		{ name: "Terraform", icon: "devicon-terraform-plain-wordmark" },
-		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark" },
+		{ name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark", category: "Cloud & Infrastructure" },
+		{ name: "Azure", icon: "devicon-azure-plain-wordmark", category: "Cloud & Infrastructure" },
+		{ name: "Docker", icon: "devicon-docker-plain-wordmark", category: "Cloud & Infrastructure" },
+		{ name: "Kubernetes", icon: "devicon-kubernetes-plain-wordmark", category: "Cloud & Infrastructure" },
+		{ name: "Terraform", icon: "devicon-terraform-plain-wordmark", category: "Cloud & Infrastructure" },
+		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark", category: "Cloud & Infrastructure" },
 
-		// Monitoring/CI
-		{ name: "Grafana", icon: "devicon-grafana-plain" },
-		{ name: "DataDog", icon: "devicon-datadog-plain" },
-		{ name: "Jenkins", icon: "devicon-jenkins-line" },
-		{ name: "Argo CD", icon: "devicon-argocd-plain" },
-		{ name: "OpenTelemetry", icon: "devicon-opentelemetry-plain" },
-		{ name: "GitHub Actions", icon: "si si-githubactions" },
-	],
+		{ name: "Grafana", icon: "devicon-grafana-plain", category: "Monitoring & CI/CD" },
+		{ name: "Datadog", icon: "devicon-datadog-plain", category: "Monitoring & CI/CD" },
+		{ name: "Jenkins", icon: "devicon-jenkins-line", category: "Monitoring & CI/CD" },
+		{ name: "Argo CD", icon: "devicon-argocd-plain", category: "Monitoring & CI/CD" },
+		{ name: "OpenTelemetry", icon: "devicon-opentelemetry-plain", category: "Monitoring & CI/CD" },
+		{ name: "GitHub Actions", icon: "si si-githubactions", category: "Monitoring & CI/CD" },
+	] satisfies ITechnology[],
 };

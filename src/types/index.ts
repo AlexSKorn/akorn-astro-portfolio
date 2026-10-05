@@ -11,7 +11,6 @@ export interface IHeroProps {
 
 export interface IExperience {
 	name: string;
-	jobTitle: string;
 	location: string;
 	startDate: string;
 	endDate: string;
@@ -33,9 +32,18 @@ export interface ITechSkill {
 	skills: string;
 }
 
+export type TechCategory =
+	| "Languages"
+	| "Frameworks"
+	| "Databases & Caching"
+	| "Artificial Intelligence"
+	| "Cloud & Infrastructure"
+	| "Monitoring & CI/CD";
+
 export interface ITechnology {
 	name: string;
 	icon: string;
+	category: TechCategory;
 }
 
 export interface ITechnologies {

@@ -14,7 +14,7 @@ const { title, details } = Astro.props as IExperiences;
 	</h2>
 	<div class="w-full lg:flex-1 relative">
 		<!-- Timeline connector line -->
-		<div class="absolute left-0 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-400 via-purple-500 to-pink-400 rounded-full hidden lg:block" aria-hidden="true"></div>
+		<div class="absolute left-0 top-2 bottom-2 w-0.5 bg-linear-to-b from-blue-400 via-purple-500 to-pink-400 rounded-full hidden lg:block" aria-hidden="true"></div>
 		
 		{
 			details.map((item, index) => (
@@ -60,7 +60,7 @@ const { title, details } = Astro.props as IExperiences;
 						<ul class="space-y-2.5 mt-4">
 							{item.description.map((desc) => (
 								<li class="text-gray-600 dark:text-gray-300 flex items-start leading-relaxed">
-									<span class="text-blue-500 dark:text-blue-400 mr-3 mt-1.5 text-xs flex-shrink-0">
+									<span class="text-blue-500 dark:text-blue-400 mr-3 mt-1.5 text-xs shrink-0" aria-hidden="true">
 										●
 									</span>
 									<span class="flex-1">{desc.replace(/^-\s*/, "")}</span>

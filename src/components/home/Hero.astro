@@ -22,9 +22,7 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 			<p class="text-gray-600 dark:text-gray-400 text-lg sm:text-xl mb-2 fade-in-up stagger-1">
 				Hey, I'm
 			</p>
-			<h1
-				class="mb-4 fade-in-up stagger-2"
-			>
+			<h1 class="main-heading mb-4 fade-in-up stagger-2">
 				{name}
 			</h1>
 
@@ -38,7 +36,7 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 			<div class="flex flex-wrap gap-4 fade-in-up stagger-4">
 				<a
 					href="#projects"
-					class="cta-primary inline-flex items-center px-7 py-3.5 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl font-medium shadow-lg shadow-blue-500/25"
+					class="cta-primary inline-flex items-center px-7 py-3.5 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl font-medium shadow-lg shadow-blue-500/25"
 				>
 					View My Work
 					<svg
@@ -52,6 +50,7 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 						stroke-linecap="round"
 						stroke-linejoin="round"
 						class="ml-2"
+						aria-hidden="true"
 					>
 						<path d="M7 17 17 7"></path>
 						<path d="m17 7-10 0"></path>
@@ -68,7 +67,7 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 		</div>
 
 		<!-- Right: Impact panel -->
-		<div class="w-full lg:w-[22rem] flex-shrink-0 fade-in-up stagger-3">
+		<div class="w-full lg:w-[22rem] shrink-0 fade-in-up stagger-3">
 			<div class="glass-card rounded-2xl p-6 shadow-lg">
 				<!-- Current role -->
 				<p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">

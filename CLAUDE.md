@@ -3,7 +3,7 @@
 High-performance portfolio website built with Astro, TypeScript, and Tailwind CSS.
 
 **Live**: https://akorn.netlify.app/  
-**Stack**: Astro 5.18 • TypeScript (strict) • Tailwind CSS 6 • Node 24
+**Stack**: Astro 7 • TypeScript (strict) • Tailwind CSS 4 • Node 24
 
 ## Project Structure
 
@@ -55,7 +55,7 @@ Before making changes to unfamiliar areas, read the relevant docs in `.ai/`:
 
 Edit `/src/data/info.ts` → `technologies` array:
 ```typescript
-{ name: "Tech Name", icon: "devicon-tech-plain" }
+{ name: "Tech Name", icon: "devicon-tech-plain", category: "Frameworks" }
 ```
 Icons: [devicon.dev](https://devicon.dev/) or [simpleicons.org](https://simpleicons.org/) (use `si si-iconname`)
 </details>

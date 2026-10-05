@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
 
@@ -7,7 +7,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://akorn.netlify.app",
   integrations: [
-    tailwind(),
     sitemap({
       changefreq: "weekly",
       priority: 0.7,
@@ -16,4 +15,7 @@ export default defineConfig({
     }),
     robotsTxt(),
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

@@ -8,7 +8,7 @@ High-performance personal portfolio website showcasing professional experience, 
 
 - **Framework**: [Astro](https://astro.build) 5.16 - Static Site Generation
 - **Language**: TypeScript (strict mode)
-- **Styling**: Tailwind CSS 6
+- **Styling**: Tailwind CSS 4
 - **Deployment**: Netlify
 - **Node**: v24 (see `.nvmrc`)
 

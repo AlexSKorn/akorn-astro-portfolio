@@ -4,63 +4,63 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-Thin.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-Thin.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-ExtraLight.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-ExtraLight.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-Light.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-Light.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-Regular.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-Medium.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-SemiBold.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-SemiBold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-ExtraBold.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-ExtraBold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(/assets/fonts/Inter/Inter-Black.ttf) format("truetype");
+  src: url(/assets/fonts/Inter/Inter-Black.woff2) format("woff2");
 }
 
 /* Outfit */
@@ -69,56 +69,56 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-Thin.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-Thin.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-ExtraLight.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-ExtraLight.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-Light.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-Light.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-Regular.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-Medium.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-SemiBold.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-SemiBold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-Bold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-ExtraBold.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-ExtraBold.woff2) format("woff2");
 }
 
 @font-face {
@@ -126,5 +126,5 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(/assets/fonts/Outfit/Outfit-Black.ttf) format("truetype");
+  src: url(/assets/fonts/Outfit/Outfit-Black.woff2) format("woff2");
 }

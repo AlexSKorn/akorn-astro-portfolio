@@ -17,7 +17,7 @@ const { title, skills } = Astro.props as ITechnicalSkills;
 			{
 				skills.map((item) => (
 					<li class="text-gray-700 dark:text-gray-300 flex items-start leading-relaxed">
-						<span class="text-blue-500 dark:text-blue-400 mr-3 mt-1 text-xs flex-shrink-0">
+						<span class="text-blue-500 dark:text-blue-400 mr-3 mt-1 text-xs shrink-0" aria-hidden="true">
 							●
 						</span>
 						<span class="flex-1">{item.skills}</span>

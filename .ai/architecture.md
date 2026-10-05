@@ -367,7 +367,7 @@ Live Site (https://akorn.netlify.app)
 - **Benefits**: Type safety, better IDE support, prevents runtime errors
 
 ### Tailwind CSS (v6.0.2)
-- **Configuration**: `tailwind.config.cjs`
+- **Configuration**: `@theme` block in `src/styles/style.css` (Tailwind 4, via `@tailwindcss/vite`)
 - **Customization**: Extended color palette, custom utilities
 - **Benefits**: Rapid development, consistent design system, automatic purging
 
