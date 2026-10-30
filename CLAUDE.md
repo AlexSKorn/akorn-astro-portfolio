@@ -20,13 +20,13 @@ src/
 
 **All portfolio content lives in `/src/data/info.ts`**
 
-- Experience, education, projects, technologies, social links
+- Experience, education, strengths/interests, technologies, social links
 - Update content → edit one file
 - Components read from `info` object and render
 
 ## Key Constraints
 
-1. **Zero JavaScript**: Astro renders everything at build time (SSG)
+1. **Zero JavaScript**: Astro renders everything at build time (SSG); the only JS is the tiny inline theme script
 2. **TypeScript Strict Mode**: Always type props, no `any`
 3. **Tailwind First**: Use utilities, custom CSS only for animations/gradients
 4. **100% Lighthouse Score**: Maintain performance
@@ -35,6 +35,7 @@ src/
 
 ```bash
 npm run dev      # Start dev server (localhost:4321)
+npm run check    # Type-check (astro check, strict)
 npm run build    # Build for production
 npm run preview  # Preview production build
 ```
@@ -55,27 +56,24 @@ Before making changes to unfamiliar areas, read the relevant docs in `.ai/`:
 
 Edit `/src/data/info.ts` → `technologies` array:
 ```typescript
-{ name: "Tech Name", icon: "devicon-tech-plain", category: "Frameworks" }
+{ name: "Tech Name", category: "Frameworks" }
 ```
-Icons: [devicon.dev](https://devicon.dev/) or [simpleicons.org](https://simpleicons.org/) (use `si si-iconname`)
+`category` must be one of the `TechCategory` values in `src/types/index.ts`.
 </details>
 
 <details>
-<summary>Adding a new project</summary>
+<summary>Writing a post</summary>
 
-Edit `/src/data/info.ts` → `projects` array:
-```typescript
-{
-  title: "Project Name",
-  isFeatured: true,
-  thumbnail: "/assets/images/project.png",
-  githubUrl: "https://github.com/...",
-  liveUrl: "", // empty if no live demo
-  description: "Brief description",
-  technologies: ["Tech1", "Tech2"],
-  achievements: ["Achievement 1", "Achievement 2"]
-}
+Add a Markdown file to `/src/content/writing/` (the filename becomes the URL slug):
+```markdown
+---
+title: "Post title"
+description: "One-sentence summary shown in lists and link previews"
+pubDate: 2026-10-05
+draft: true # hidden everywhere (dev included); remove to publish
+---
 ```
+The homepage Writing section, navbar link, and "Read My Writing" hero button appear automatically once at least one post is published (not a draft).
 </details>
 
 <details>

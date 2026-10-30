@@ -7,14 +7,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.12",
     "@astrojs/sitemap": "^3.7.4",
     "@astrojs/ts-plugin": "^1.10.12",
+    "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.5",
+    "astro": "^7.4.4",
     "astro-robots-txt": "^1.0.0",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
   }
 }

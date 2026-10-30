@@ -17,89 +17,41 @@ Alex Korn's portfolio is a high-performance static website built with Astro's St
 ```
 akorn-astro-portfolio/
 ├── src/
-│   ├── components/          # UI Components
-│   │   ├── general/         # Global reusable components
-│   │   │   ├── BaseLayout.astro
-│   │   │   ├── Footer.astro
-│   │   │   ├── Navbar.astro
-│   │   │   ├── Logo.astro
-│   │   │   └── SocialLinks.astro
-│   │   └── home/            # Home page sections
-│   │       ├── Hero.astro
-│   │       ├── Experience.astro
-│   │       ├── Education.astro
-│   │       ├── Projects.astro
-│   │       ├── Technologies.astro
-│   │       └── About.astro
-│   ├── data/
-│   │   └── info.ts          # ⭐ Content database
-│   ├── layouts/
-│   │   └── Layout.astro     # Base HTML layout
+│   ├── components/
+│   │   ├── general/         # MetaHead, Navbar, Footer, WritingList
+│   │   └── home/            # Hero, About, Experience, Technologies, Contact
+│   ├── content/writing/     # Markdown posts (content collection)
+│   ├── content.config.ts    # Writing collection schema
+│   ├── data/info.ts         # ⭐ Content database
+│   ├── layouts/Layout.astro # Base HTML layout + early theme script
 │   ├── pages/
-│   │   └── index.astro      # Home page (only page)
-│   ├── styles/
-│   │   ├── global.css       # Global base styles
-│   │   ├── custom-styles.css # Custom animations/gradients
-│   │   └── nav-footer.css   # Navigation/footer specific
-│   ├── types/
-│   │   └── info.ts          # TypeScript interfaces
-│   └── utils/
-│       └── helpers.ts       # Utility functions
-├── public/                  # Static assets
-│   └── assets/
-│       └── images/          # Project thumbnails, etc.
-├── dist/                    # Build output (generated)
-└── [config files]
+│   │   ├── index.astro      # Home page
+│   │   └── writing/         # /writing/ index and /writing/[slug]/ (only built once a post is published)
+│   ├── styles/              # style.css (Tailwind + theme), custom-styles.css, fonts.css
+│   ├── types/index.ts       # TypeScript interfaces
+│   └── utils/               # createLogo, writing helpers
+├── public/assets/           # Resume PDF, fonts, OG image
+└── dist/                    # Build output (generated)
 ```
 
 ## Data Flow
 
-### Content Pipeline
-
-```
-┌─────────────────────┐
-│  /src/data/info.ts  │  ← Single source of truth
-│  (TypeScript object)│
-└──────────┬──────────┘
-           │
-           │ Import
-           ▼
-┌─────────────────────┐
-│   Home Components   │  ← Read from info object
-│  (Experience, etc.) │
-└──────────┬──────────┘
-           │
-           │ Render
-           ▼
-┌─────────────────────┐
-│  /pages/index.astro │  ← Compose sections
-└──────────┬──────────┘
-           │
-           │ Build
-           ▼
-┌─────────────────────┐
-│  Static HTML (dist/)│  ← Deployed to Netlify
-└─────────────────────┘
-```
+`src/data/info.ts` → home components read `info` → `pages/index.astro` composes sections → static HTML in `dist/` → Netlify.
 
 ### Component Hierarchy
 
 ```
-Layout.astro (Base HTML structure)
-└── index.astro (Home page)
-    ├── Navbar
-    ├── Hero
-    ├── About
-    ├── Experience
-    │   └── ExperienceCard (renders each job)
-    ├── Education  
-    │   └── EducationCard (renders each school)
-    ├── Projects
-    │   └── ProjectCard (renders each project)
-    ├── Technologies
-    │   └── TechnologyIcon (renders each tech)
-    └── Footer
-        └── SocialLinks
+Layout.astro
+├── Navbar
+├── index.astro
+│   ├── Hero
+│   ├── About
+│   ├── Experience (id="experience")
+│   ├── Writing (only when a post is published)
+│   ├── Technologies
+│   ├── Experience (id="education")
+│   └── Contact
+└── Footer
 ```
 
 ## Key Design Patterns
@@ -140,9 +92,8 @@ const technologies = info.technologies;
     <Hero />
     <About />
     <Experience />
-    <Education />
-    <Projects />
     <Technologies />
+    <Contact />
   </main>
   <Footer />
 </Layout>
@@ -353,7 +304,7 @@ Live Site (https://akorn.netlify.app)
 
 ## Technology Stack Deep Dive
 
-### Astro (v5.16.11)
+### Astro (v7)
 - **Purpose**: Static site generator framework
 - **Benefits**: 
   - Zero JS by default
@@ -366,7 +317,7 @@ Live Site (https://akorn.netlify.app)
 - **Usage**: Component props, data structures, utilities
 - **Benefits**: Type safety, better IDE support, prevents runtime errors
 
-### Tailwind CSS (v6.0.2)
+### Tailwind CSS (v4)
 - **Configuration**: `@theme` block in `src/styles/style.css` (Tailwind 4, via `@tailwindcss/vite`)
 - **Customization**: Extended color palette, custom utilities
 - **Benefits**: Rapid development, consistent design system, automatic purging
@@ -391,10 +342,8 @@ Live Site (https://akorn.netlify.app)
 
 ### Future Enhancements
 
-- **Content Collections**: For blog posts, case studies
-- **Dynamic Routes**: For individual project pages
+- **Projects section**: Add back once there are projects worth showing
 - **API Integration**: Fetch GitHub stats, blog posts from CMS
-- **Dark Mode**: Theme toggle with Tailwind dark: variants
 - **Analytics**: Privacy-focused analytics integration
 - **Search**: Client-side search with Fuse.js or similar
 
@@ -437,4 +386,4 @@ Live Site (https://akorn.netlify.app)
 - Monitor Lighthouse scores
 - Review and update content quarterly
 - Check broken links
-- Update portfolio projects as completed
+- Keep experience and the resume PDF in sync

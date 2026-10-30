@@ -5,7 +5,39 @@ export const info = {
 	name: "Alex Korn",
 	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
 
-	about: `Senior software engineer specializing in high-scale distributed systems and AI-native platforms. I'm currently building a greenfield AI Agent Identity platform at Twilio, taking it from zero to production. Previously I architected serverless infrastructure at Okta/Auth0 serving billions of authentication requests a day at sub-200ms latency. Across 8+ years at Twilio, Okta, Slalom, and Discover, I've owned products end-to-end — architecture, APIs, infrastructure, and the observability that keeps them reliable. Beyond building AI products, I lead adoption of AI-powered engineering workflows, agentic coding loops, automation, and tools like Claude Code, to accelerate how teams ship.`,
+	about: `I'm a senior software engineer specializing in high-scale distributed systems and AI-native platforms. At Twilio I'm building a greenfield AI Agent Identity platform from zero to production; before that I architected serverless infrastructure at Okta/Auth0 serving billions of authentication requests a day at sub-200ms latency. Over 8+ years, from medical devices to consulting, fintech, and now identity and security, I've owned products end-to-end: architecture, APIs, infrastructure, and the observability that keeps them reliable. I also lead adoption of AI-powered engineering workflows, agentic coding loops, and tools like Claude Code to accelerate how teams ship.`,
+
+	strengths: [
+		{
+			title: "Technical Leadership",
+			detail: "Led cross-functional teams and mentored junior engineers",
+		},
+		{
+			title: "Business Acumen",
+			detail: "Partner with stakeholders and customers to align technical solutions with business goals",
+		},
+		{
+			title: "Full-Stack Expertise",
+			detail: "From React frontends to Go microservices and cloud infrastructure",
+		},
+		{
+			title: "Product Security Expertise",
+			detail: "Consistently deliver products with security and compliance in mind",
+		},
+		{
+			title: "DevOps Expertise",
+			detail: "Proficient in CI/CD, Kubernetes, and cloud infrastructure",
+		},
+		{
+			title: "AI Expertise",
+			detail: "Expertise in AI tools and building AI-driven applications",
+		},
+	],
+
+	interests: ["Hockey, Soccer and Baseball Player", "Book worm", "Passionate about fitness"],
+
+	contactBlurb:
+		"Open to conversations about agent identity, distributed systems, and engineering with AI.",
 
 	experience: [
 		{
@@ -204,13 +236,6 @@ export const info = {
 		},
 	],
 
-	skills: [
-		{
-			title: "Certifications",
-			skills: "AWS Solutions Architect",
-		},
-	],
-
 	education: [
 		{
 			name: "Gustavus Adolphus College",
@@ -218,6 +243,13 @@ export const info = {
 			startDate: "2014",
 			endDate: "2018",
 			description: ["Bachelor's in Computer Science"],
+		},
+		{
+			name: "AWS Certified Solutions Architect",
+			location: "Amazon Web Services",
+			startDate: "",
+			endDate: "",
+			description: [],
 		},
 	],
 
@@ -227,89 +259,40 @@ export const info = {
 		linkedin: "https://www.linkedin.com/in/alex-korn-97510a11b/",
 	},
 
-	projects: [
-		{
-			title: "Astro Portfolio",
-			isFeatured: true,
-			thumbnail: "/assets/images/astro-portfolio.png",
-			githubUrl: "https://github.com/AlexSKorn/akorn-astro-portfolio",
-			liveUrl: "https://akorn.netlify.app",
-			description:
-				"A modern, high-performance portfolio website showcasing my expertise in frontend development and performance optimization. Built with Astro for optimal loading speeds and SEO.",
-			technologies: ["Astro", "TypeScript", "Tailwind CSS", "Netlify"],
-			achievements: [
-				"100% Lighthouse performance score",
-				"Zero JavaScript bundle for instant loading",
-			],
-		},
-		{
-			title: "Instagram Recipe Extractor",
-			isFeatured: true,
-			thumbnail: "/assets/images/instagramimage.webp",
-			githubUrl: "https://github.com/AlexSKorn/InstagramRecipeExtractor",
-			liveUrl: "",
-			description:
-				"This repository provides a tool for extracting recipes from Instagram Reels and organizing them into structured Markdown files using local AI. Users can paste a public Reel URL to automatically generate ingredients and instructions, which can then be saved and browsed within the application.",
-			technologies: ["Python", "React", "TypeScript", "Docker", "Ollama"],
-			achievements: [
-				"Local AI processing for privacy",
-				"Automatic recipe structuring from video content",
-			],
-		},
-		{
-			title: "Tailscale MCP Server",
-			isFeatured: true,
-			thumbnail: "/assets/images/tailscale.webp",
-			githubUrl: "https://github.com/AlexSKorn/TailscaleMCP",
-			liveUrl: "",
-			description:
-				"An MCP server for Tailscale that allows you to interact with your Tailscale network using AI.",
-			technologies: ["Python", "FastMCP", "Docker", "Tailscale", "MCP"],
-			achievements: [
-				"Integrated private networking with AI assistants",
-				"Robust, automated local API diagnostics",
-			],
-		},
-	],
-
 	technologies: [
-		{ name: "TypeScript", icon: "devicon-typescript-plain", category: "Languages" },
-		{ name: "Go", icon: "devicon-go-original-wordmark", category: "Languages" },
-		{ name: "Python", icon: "devicon-python-plain", category: "Languages" },
+		{ name: "TypeScript", category: "Languages" },
+		{ name: "Go", category: "Languages" },
+		{ name: "Python", category: "Languages" },
 
-		{ name: "React", icon: "devicon-react-original-wordmark", category: "Frameworks" },
-		{ name: "Next.js", icon: "devicon-nextjs-original-wordmark", category: "Frameworks" },
-		{ name: "Node.js", icon: "devicon-nodejs-plain-wordmark", category: "Frameworks" },
-		{ name: "Tailwind CSS", icon: "devicon-tailwindcss-plain", category: "Frameworks" },
-		{ name: "LangGraph", icon: "si si-langchain", category: "Frameworks" },
-		{ name: "Django", icon: "devicon-django-plain", category: "Frameworks" },
+		{ name: "React", category: "Frameworks" },
+		{ name: "Next.js", category: "Frameworks" },
+		{ name: "Node.js", category: "Frameworks" },
+		{ name: "Tailwind CSS", category: "Frameworks" },
+		{ name: "Django", category: "Frameworks" },
 
-		{ name: "PostgreSQL", icon: "devicon-postgresql-plain-wordmark", category: "Databases & Caching" },
-		{ name: "MongoDB", icon: "devicon-mongodb-plain-wordmark", category: "Databases & Caching" },
-		{ name: "Cassandra", icon: "devicon-cassandra-plain-wordmark", category: "Databases & Caching" },
-		{ name: "Redis", icon: "devicon-redis-plain-wordmark", category: "Databases & Caching" },
-		{ name: "Pinecone", icon: "/assets/icons/pinecone.svg", category: "Databases & Caching" },
-		{ name: "Snowflake", icon: "si si-snowflake", category: "Databases & Caching" },
+		{ name: "PostgreSQL", category: "Databases & Caching" },
+		{ name: "MongoDB", category: "Databases & Caching" },
+		{ name: "Cassandra", category: "Databases & Caching" },
+		{ name: "Redis", category: "Databases & Caching" },
+		{ name: "Pinecone", category: "Databases & Caching" },
+		{ name: "Snowflake", category: "Databases & Caching" },
 
-		{ name: "GitHub Copilot", icon: "si si-githubcopilot", category: "Artificial Intelligence" },
-		{ name: "Cursor", icon: "si si-cursor", category: "Artificial Intelligence" },
-		{ name: "Claude Code", icon: "si si-anthropic", category: "Artificial Intelligence" },
-		{ name: "Gemini", icon: "si si-googlegemini", category: "Artificial Intelligence" },
-		{ name: "Hugging Face", icon: "si si-huggingface", category: "Artificial Intelligence" },
-		{ name: "Amazon Bedrock", icon: "/assets/icons/bedrock.svg", category: "Artificial Intelligence" },
+		{ name: "LangGraph", category: "Artificial Intelligence" },
+		{ name: "Amazon Bedrock", category: "Artificial Intelligence" },
+		{ name: "Hugging Face", category: "Artificial Intelligence" },
 
-		{ name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark", category: "Cloud & Infrastructure" },
-		{ name: "Azure", icon: "devicon-azure-plain-wordmark", category: "Cloud & Infrastructure" },
-		{ name: "Docker", icon: "devicon-docker-plain-wordmark", category: "Cloud & Infrastructure" },
-		{ name: "Kubernetes", icon: "devicon-kubernetes-plain-wordmark", category: "Cloud & Infrastructure" },
-		{ name: "Terraform", icon: "devicon-terraform-plain-wordmark", category: "Cloud & Infrastructure" },
-		{ name: "Kafka", icon: "devicon-apachekafka-original-wordmark", category: "Cloud & Infrastructure" },
+		{ name: "AWS", category: "Cloud & Infrastructure" },
+		{ name: "Azure", category: "Cloud & Infrastructure" },
+		{ name: "Docker", category: "Cloud & Infrastructure" },
+		{ name: "Kubernetes", category: "Cloud & Infrastructure" },
+		{ name: "Terraform", category: "Cloud & Infrastructure" },
+		{ name: "Kafka", category: "Cloud & Infrastructure" },
 
-		{ name: "Grafana", icon: "devicon-grafana-plain", category: "Monitoring & CI/CD" },
-		{ name: "Datadog", icon: "devicon-datadog-plain", category: "Monitoring & CI/CD" },
-		{ name: "Jenkins", icon: "devicon-jenkins-line", category: "Monitoring & CI/CD" },
-		{ name: "Argo CD", icon: "devicon-argocd-plain", category: "Monitoring & CI/CD" },
-		{ name: "OpenTelemetry", icon: "devicon-opentelemetry-plain", category: "Monitoring & CI/CD" },
-		{ name: "GitHub Actions", icon: "si si-githubactions", category: "Monitoring & CI/CD" },
+		{ name: "Grafana", category: "Monitoring & CI/CD" },
+		{ name: "Datadog", category: "Monitoring & CI/CD" },
+		{ name: "Jenkins", category: "Monitoring & CI/CD" },
+		{ name: "Argo CD", category: "Monitoring & CI/CD" },
+		{ name: "OpenTelemetry", category: "Monitoring & CI/CD" },
+		{ name: "GitHub Actions", category: "Monitoring & CI/CD" },
 	] satisfies ITechnology[],
 };

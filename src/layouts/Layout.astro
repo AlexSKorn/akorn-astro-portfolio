@@ -7,124 +7,26 @@ import "../styles/style.css";
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/simple-icons-font@16.6.0/font/simple-icons.min.css"
-			type="text/css"
-		/>
-		<meta name="generator" content={Astro.generator} />
-		<!-- Early theme initialization to avoid FOUC -->
+		<!-- Set the theme before first paint to avoid a flash of the wrong theme -->
 		<script is:inline>
 			(function () {
+				let theme = "light";
 				try {
-					const stored =
-						typeof localStorage !== "undefined"
-							? localStorage.getItem("theme")
-							: null;
-					const prefersDark =
-						typeof window !== "undefined" &&
-						window.matchMedia &&
-						window.matchMedia("(prefers-color-scheme: dark)").matches;
-					const theme = stored || (prefersDark ? "dark" : "light");
-					document.documentElement.setAttribute("data-theme", theme);
+					theme =
+						localStorage.getItem("theme") ||
+						(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 				} catch (_) {}
+				document.documentElement.setAttribute("data-theme", theme);
 			})();
 		</script>
 		<slot name="head" />
 	</head>
 	<body class="min-h-screen">
-		<a href="#main-content" class="skip-to-content sr-only focus:not-sr-only">
-			Skip to main content
-		</a>
+		<a href="#main-content" class="skip-to-content">Skip to main content</a>
 		<Navbar />
 		<main id="main-content" class="container" tabindex="-1">
 			<slot />
 		</main>
 		<Footer />
-
-		<!-- Back to top button -->
-		<button
-			id="back-to-top"
-			class="back-to-top"
-			aria-label="Back to top"
-			title="Back to top"
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="20"
-				height="20"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				aria-hidden="true"
-			>
-				<path d="m18 15-6-6-6 6"></path>
-			</svg>
-		</button>
-
-		<!-- Enhanced animations script -->
-		<script is:inline>
-			// Intersection Observer for scroll animations
-			document.addEventListener('DOMContentLoaded', () => {
-				const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-				
-				if (!prefersReducedMotion) {
-					const observerOptions = {
-						threshold: 0.1,
-						rootMargin: '0px 0px -50px 0px'
-					};
-
-					const observer = new IntersectionObserver((entries) => {
-						entries.forEach(entry => {
-							if (entry.isIntersecting) {
-								entry.target.classList.add('visible');
-								observer.unobserve(entry.target);
-							}
-						});
-					}, observerOptions);
-
-					// Observe all elements with fade-in-up class
-					document.querySelectorAll('.fade-in-up').forEach(el => {
-						observer.observe(el);
-					});
-				} else {
-					// If reduced motion is preferred, show all elements immediately
-					document.querySelectorAll('.fade-in-up').forEach(el => {
-						el.classList.add('visible');
-					});
-				}
-			});
-		</script>
-
-		<script>
-			// Back to top functionality
-			const backToTopButton = document.getElementById("back-to-top");
-
-			window.addEventListener("scroll", () => {
-				if (window.pageYOffset > 300) {
-					backToTopButton?.classList.add("visible");
-				} else {
-					backToTopButton?.classList.remove("visible");
-				}
-			});
-
-			backToTopButton?.addEventListener("click", () => {
-				window.scrollTo({
-					top: 0,
-					behavior: "smooth",
-				});
-			});
-		</script>
 	</body>
 </html>

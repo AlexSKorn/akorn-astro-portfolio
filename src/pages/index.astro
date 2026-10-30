@@ -5,20 +5,14 @@ import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import About from "@components/home/About.astro";
 import Experience from "@components/home/Experience.astro";
-import TechnicalSkills from "@components/home/TechnicalSkills.astro";
-// TODO: re-enable when better projects are ready (see Featured Projects section below)
-// import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import Contact from "@components/home/Contact.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Technologies from "@components/home/Technologies.astro";
+import WritingList from "@components/general/WritingList.astro";
+import { getPosts } from "@utils/writing";
 
-// TODO: re-enable when better projects are ready (see Featured Projects section below)
-// const featureProjects = info.projects.reduce((accumulator, project) => {
-// 	if (accumulator.length < 6 && project.isFeatured) {
-// 		accumulator.push(project);
-// 	}
-// 	return accumulator;
-// }, []);
+const posts = await getPosts();
+const latestPosts = posts.slice(0, 3);
 ---
 
 <Layout>
@@ -30,32 +24,39 @@ import Technologies from "@components/home/Technologies.astro";
 		/>
 	</Fragment>
 
-	<Hero name={info.name} about={info.about} />
+	<Hero name={info.name} hasWriting={posts.length > 0} />
 
 	<About />
 
-	{/* TODO: Featured Projects hidden for now — re-enable (along with the
-	   ProjectsWrapper import and featureProjects const above) once better
-	   projects are ready to display. */}
-	{/* <section id="projects" class="my-10" aria-labelledby="projects-title">
-		<div class="flex items-center mb-8 fade-in-up">
-			<div class="section-title-bar mr-4"></div>
-			<h2
-				id="projects-title"
-				class="text-2xl font-semibold text-gray-800 dark:text-gray-100"
-			>
-				FEATURED PROJECTS
-			</h2>
-		</div>
-		<ProjectsWrapper projects={featureProjects} />
-	</section> */}
+	<Experience id="experience" title={"EXPERIENCE"} details={info.experience} detailedCount={3} />
 
-	<section id="experience" aria-labelledby="experience-title">
-		<Experience title={"EXPERIENCE"} details={info.experience} />
-	</section>
+	{
+		latestPosts.length > 0 && (
+			<section id="writing" class="my-10" aria-labelledby="writing-title">
+				<div class="flex items-center justify-between mb-8">
+					<div class="flex items-center">
+						<div class="section-title-bar mr-4" />
+						<h2
+							id="writing-title"
+							class="text-2xl font-semibold text-gray-800 dark:text-gray-100"
+						>
+							WRITING
+						</h2>
+					</div>
+					<a
+						href="/writing/"
+						class="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+					>
+						All writing →
+					</a>
+				</div>
+				<WritingList posts={latestPosts} />
+			</section>
+		)
+	}
+
 	<Technologies title={"TECHNOLOGIES"} technologies={info.technologies} />
-	<TechnicalSkills title={"CERTIFICATIONS"} skills={info.skills} />
-	<Experience title={"EDUCATION"} details={info.education} />
+	<Experience id="education" title={"EDUCATION & CERTIFICATIONS"} details={info.education} />
 
 	<Contact />
 </Layout>

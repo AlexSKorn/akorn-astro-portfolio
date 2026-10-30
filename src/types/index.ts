@@ -1,12 +1,12 @@
 export interface IMetaHead {
 	title: string;
 	description: string;
-	ogImageUrl: string;
+	ogImageUrl?: string;
 }
 
 export interface IHeroProps {
 	name: string;
-	about: string;
+	hasWriting: boolean;
 }
 
 export interface IExperience {
@@ -18,18 +18,12 @@ export interface IExperience {
 	skills?: string[];
 }
 export interface IExperiences {
+	/** Section anchor id; the heading gets `${id}-title` */
+	id: string;
 	title: string;
 	details: IExperience[];
-}
-
-export interface ITechnicalSkills {
-	title: string;
-	skills: ITechSkill[];
-}
-
-export interface ITechSkill {
-	title: string;
-	skills: string;
+	/** Show only the first N entries in full; the rest collapse into one-line summaries */
+	detailedCount?: number;
 }
 
 export type TechCategory =
@@ -42,29 +36,10 @@ export type TechCategory =
 
 export interface ITechnology {
 	name: string;
-	icon: string;
 	category: TechCategory;
 }
 
 export interface ITechnologies {
 	title: string;
 	technologies: ITechnology[];
-}
-
-export interface IProject {
-	title: string;
-	isFeatured: boolean;
-	thumbnail: string;
-	githubUrl: string;
-	liveUrl: string;
-	description?: string;
-	technologies?: string[];
-	achievements?: string[];
-}
-export interface IProjects {
-	projects: IProject[];
-}
-
-export interface IProjectDetails {
-	projectDetail: IProject;
 }
