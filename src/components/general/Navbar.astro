@@ -1,9 +1,7 @@
 ---
 import { info } from "@data";
 import { createLogo } from "@utils";
-import { getPosts } from "@utils/writing";
 
-const hasWriting = (await getPosts()).length > 0;
 const linkClass =
 	"nav-link px-2 py-3 sm:p-4 block text-sm sm:text-lg transition-colors hover:text-blue-600 dark:text-gray-200 dark:hover:text-blue-400 font-medium";
 ---
@@ -22,19 +20,6 @@ const linkClass =
 			<li>
 				<a class={linkClass} href="/#experience">Experience</a>
 			</li>
-			{
-				hasWriting && (
-					<li>
-						<a
-							class={linkClass}
-							href="/writing/"
-							aria-current={Astro.url.pathname.startsWith("/writing") ? "page" : undefined}
-						>
-							Writing
-						</a>
-					</li>
-				)
-			}
 			<li>
 				<a class={linkClass} href="/#contact">Contact</a>
 			</li>

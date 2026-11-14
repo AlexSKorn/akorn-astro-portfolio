@@ -1,8 +1,4 @@
-/* ========== import font source ========== */
-@import "fonts.css";
-
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 
 /* ========== import custom styles ========== */
 /* Layered so Tailwind utilities still take precedence, matching v3 behavior */
@@ -38,9 +34,12 @@
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
   --color-gray-900: #111827;
+}
 
-  --font-inter: "Inter", sans-serif;
-  --font-outfit: "Outfit", sans-serif;
+/* Font families come from Astro's Fonts API (see astro.config.mjs) */
+@theme inline {
+  --font-sans: var(--astro-font-inter);
+  --font-outfit: var(--astro-font-outfit);
 }
 
 @utility container {
@@ -76,6 +75,6 @@ html {
   p,
   li,
   a {
-    @apply font-inter text-dark-gray dark:text-gray-300;
+    @apply text-dark-gray dark:text-gray-300;
   }
 }

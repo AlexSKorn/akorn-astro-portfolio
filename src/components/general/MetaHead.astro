@@ -1,12 +1,14 @@
 ---
+import { Font } from "astro:assets";
 import type { IMetaHead } from "@types";
 import { info } from "@data";
 
 const { title, description, ogImageUrl } = Astro.props as IMetaHead;
+
+const currentCompany = info.experience[0].name.split(" - ")[0];
+const college = info.education[0].name;
 ---
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="index,follow" />
 
 <!-- Favicon -->
@@ -38,7 +40,12 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 {description && <meta property="og:description" content={description} />}
 {
 	ogImageUrl && (
-		<meta property="og:image" content={`${info.baseUrl}${ogImageUrl}`} />
+		<>
+			<meta property="og:image" content={`${info.baseUrl}${ogImageUrl}`} />
+			<meta property="og:image:width" content="1200" />
+			<meta property="og:image:height" content="630" />
+			<meta property="og:image:alt" content={`${info.name}, ${info.jobDescription}`} />
+		</>
 	)
 }
 
@@ -61,23 +68,13 @@ const { title, description, ogImageUrl } = Astro.props as IMetaHead;
 		name: info.name,
 		jobTitle: info.jobDescription,
 		url: info.baseUrl,
+		worksFor: { "@type": "Organization", name: currentCompany },
+		alumniOf: { "@type": "CollegeOrUniversity", name: college },
 		sameAs: [info.socialMedia.linkedin, info.socialMedia.github],
 	})}
 />
 
-<!-- preload assets -->
-<link
-	rel="preload"
-	href="/assets/fonts/Inter/Inter-Regular.woff2"
-	as="font"
-	type="font/woff2"
-	crossorigin
-/>
-<link
-	rel="preload"
-	href="/assets/fonts/Outfit/Outfit-SemiBold.woff2"
-	as="font"
-	type="font/woff2"
-	crossorigin
-/>
+<!-- Fonts: @font-face rules, metric-matched fallbacks, and preload links -->
+<Font cssVariable="--astro-font-inter" preload />
+<Font cssVariable="--astro-font-outfit" preload />
 

@@ -6,7 +6,6 @@ export interface IMetaHead {
 
 export interface IHeroProps {
 	name: string;
-	hasWriting: boolean;
 }
 
 export interface IExperience {

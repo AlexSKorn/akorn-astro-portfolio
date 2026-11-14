@@ -18,19 +18,16 @@ Alex Korn's portfolio is a high-performance static website built with Astro's St
 akorn-astro-portfolio/
 ├── src/
 │   ├── components/
-│   │   ├── general/         # MetaHead, Navbar, Footer, WritingList
+│   │   ├── general/         # MetaHead, Navbar, Footer
 │   │   └── home/            # Hero, About, Experience, Technologies, Contact
-│   ├── content/writing/     # Markdown posts (content collection)
-│   ├── content.config.ts    # Writing collection schema
 │   ├── data/info.ts         # ⭐ Content database
 │   ├── layouts/Layout.astro # Base HTML layout + early theme script
 │   ├── pages/
 │   │   ├── index.astro      # Home page
-│   │   └── writing/         # /writing/ index and /writing/[slug]/ (only built once a post is published)
-│   ├── styles/              # style.css (Tailwind + theme), custom-styles.css, fonts.css
+│   ├── styles/              # style.css (Tailwind + theme), custom-styles.css
 │   ├── types/index.ts       # TypeScript interfaces
-│   └── utils/               # createLogo, writing helpers
-├── public/assets/           # Resume PDF, fonts, OG image
+│   └── utils/               # createLogo
+├── public/assets/           # Resume PDF, OG image (fonts come from @fontsource-variable/* via Astro's Fonts API in astro.config.mjs)
 └── dist/                    # Build output (generated)
 ```
 
@@ -47,7 +44,6 @@ Layout.astro
 │   ├── Hero
 │   ├── About
 │   ├── Experience (id="experience")
-│   ├── Writing (only when a post is published)
 │   ├── Technologies
 │   ├── Experience (id="education")
 │   └── Contact
@@ -337,13 +333,12 @@ Live Site (https://akorn.netlify.app)
 ✅ Adding new pages (create in `/src/pages/`)
 ✅ Adding content (edit `/src/data/info.ts`)
 ✅ Adding components (create in `/src/components/`)
-✅ Blog functionality (create `/src/content/` with Astro Content Collections)
 ✅ Multi-language (i18n with Astro i18n integration)
 
 ### Future Enhancements
 
 - **Projects section**: Add back once there are projects worth showing
-- **API Integration**: Fetch GitHub stats, blog posts from CMS
+- **API Integration**: Fetch GitHub stats
 - **Analytics**: Privacy-focused analytics integration
 - **Search**: Client-side search with Fuse.js or similar
 

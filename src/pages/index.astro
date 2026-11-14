@@ -8,11 +8,6 @@ import Experience from "@components/home/Experience.astro";
 import Contact from "@components/home/Contact.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 import Technologies from "@components/home/Technologies.astro";
-import WritingList from "@components/general/WritingList.astro";
-import { getPosts } from "@utils/writing";
-
-const posts = await getPosts();
-const latestPosts = posts.slice(0, 3);
 ---
 
 <Layout>
@@ -20,40 +15,15 @@ const latestPosts = posts.slice(0, 3);
 		<MetaHead
 			title={"Senior Software Engineer | AI & Distributed Systems"}
 			description={"Senior Software Engineer with 8+ years building high-performance distributed systems, cloud platforms, and full-stack products. Currently at Twilio (AI Agent Identity), previously Okta/Auth0. Specializing in TypeScript, Go, React, AWS, Kubernetes, and AI engineering."}
-			ogImageUrl={"/assets/images/astro-portfolio.png"}
+			ogImageUrl={"/assets/images/og.png"}
 		/>
 	</Fragment>
 
-	<Hero name={info.name} hasWriting={posts.length > 0} />
+	<Hero name={info.name} />
 
 	<About />
 
 	<Experience id="experience" title={"EXPERIENCE"} details={info.experience} detailedCount={3} />
-
-	{
-		latestPosts.length > 0 && (
-			<section id="writing" class="my-10" aria-labelledby="writing-title">
-				<div class="flex items-center justify-between mb-8">
-					<div class="flex items-center">
-						<div class="section-title-bar mr-4" />
-						<h2
-							id="writing-title"
-							class="text-2xl font-semibold text-gray-800 dark:text-gray-100"
-						>
-							WRITING
-						</h2>
-					</div>
-					<a
-						href="/writing/"
-						class="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
-					>
-						All writing →
-					</a>
-				</div>
-				<WritingList posts={latestPosts} />
-			</section>
-		)
-	}
 
 	<Technologies title={"TECHNOLOGIES"} technologies={info.technologies} />
 	<Experience id="education" title={"EDUCATION & CERTIFICATIONS"} details={info.education} />

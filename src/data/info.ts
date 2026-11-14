@@ -5,36 +5,29 @@ export const info = {
 	name: "Alex Korn",
 	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
 
-	about: `I'm a senior software engineer specializing in high-scale distributed systems and AI-native platforms. At Twilio I'm building a greenfield AI Agent Identity platform from zero to production; before that I architected serverless infrastructure at Okta/Auth0 serving billions of authentication requests a day at sub-200ms latency. Over 8+ years, from medical devices to consulting, fintech, and now identity and security, I've owned products end-to-end: architecture, APIs, infrastructure, and the observability that keeps them reliable. I also lead adoption of AI-powered engineering workflows, agentic coding loops, and tools like Claude Code to accelerate how teams ship.`,
+	about: `I'm a senior software engineer working on distributed systems and AI platforms. At Twilio I lead the build of a new AI Agent Identity platform, from first commit to production. Before that, at Okta, I worked on Auth0 Actions, the serverless platform that runs customer code inside login flows, holding P99 latency under 300ms at 5,000+ requests per second. Over 8+ years I've owned products end to end: architecture, APIs, infrastructure and observability.`,
 
 	strengths: [
 		{
-			title: "Technical Leadership",
-			detail: "Led cross-functional teams and mentored junior engineers",
+			title: "Systems at scale",
+			detail: "Improved Auth0 Actions performance 40% at 5,000+ RPS while holding P99 latency under 300ms",
 		},
 		{
-			title: "Business Acumen",
-			detail: "Partner with stakeholders and customers to align technical solutions with business goals",
+			title: "Zero-to-one delivery",
+			detail:
+				"Took Twilio's Agent Identity platform from greenfield to production, and shipped a new financial product at Discover from beta to MVP",
 		},
 		{
-			title: "Full-Stack Expertise",
-			detail: "From React frontends to Go microservices and cloud infrastructure",
+			title: "Technical leadership",
+			detail:
+				"Tech lead at Twilio and lead engineer on enterprise engagements at Slalom, presenting to executive stakeholders and mentoring junior engineers",
 		},
 		{
-			title: "Product Security Expertise",
-			detail: "Consistently deliver products with security and compliance in mind",
-		},
-		{
-			title: "DevOps Expertise",
-			detail: "Proficient in CI/CD, Kubernetes, and cloud infrastructure",
-		},
-		{
-			title: "AI Expertise",
-			detail: "Expertise in AI tools and building AI-driven applications",
+			title: "AI-accelerated engineering",
+			detail:
+				"Drive adoption of agentic coding workflows across teams, and contribute to the working groups defining agent identity standards",
 		},
 	],
-
-	interests: ["Hockey, Soccer and Baseball Player", "Book worm", "Passionate about fitness"],
 
 	contactBlurb:
 		"Open to conversations about agent identity, distributed systems, and engineering with AI.",
@@ -67,14 +60,14 @@ export const info = {
 			],
 		},
 		{
-			name: "Okta - Senior Software Engineer (Auth0 Extensibility)",
+			name: "Okta - Senior Software Engineer (Auth0 Actions)",
 			location: "San Francisco, CA (remote)",
 			startDate: "Aug 2024",
 			endDate: "Apr 2026",
 			description: [
 				"-  Collaborated with product managers and stakeholders to prioritize features that delivered maximum customer value while ensuring platform reliability",
 				"-  Enhanced platform performance by 40% under peak load of 5,000+ RPS by implementing optimized caching strategy, maintaining P99 latencies below 300ms",
-				"-  Engineered and maintained extensibility infrastructure, empowering thousands of developers to run custom code in their authentication and authorization flows",
+				"-  Engineered and maintained Auth0 Actions, the extensibility platform empowering thousands of developers to run custom code in their authentication and authorization flows",
 				"-  Drove a 50-80% reduction in CI/CD build and test times by re-architecting the pipeline with parallelized jobs and improved caching",
 				"-  Led efforts to modernize and implement AI solutions, boosting developer productivity and enhancing platform documentation",
 				"-  Reduced Kubernetes cluster startup time from 2m 45s to 1m 30s by parallelizing pod initialization and optimizing resource allocation",
@@ -108,7 +101,7 @@ export const info = {
 				"-  Partnered with sales and leadership across multiple client engagements to conduct discovery sessions, understand business requirements, and architect tailored solutions that addressed client needs",
 				"-  Served as technical advisor to enterprise clients, presenting solutions to executive stakeholders and guiding technology strategy decisions",
 				"-  Led technical initiatives as a lead engineer, collaborating with cross-functional teams to translate business needs into scalable, secure systems",
-				"-  Developed secure, high-traffic GraphQL, REST, and gRPC APIs supporting millions of users and billions of daily requests",
+				"-  Developed secure, high-traffic GraphQL, REST, and gRPC APIs supporting millions of users",
 				"-  Mentored and coached junior engineers to help them grow and develop their technical skills",
 				"-  Built scalable, real-time data pipelines to support large-scale data processing for AI/ML and BI applications",
 			],

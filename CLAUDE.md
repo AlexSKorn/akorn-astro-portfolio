@@ -20,7 +20,7 @@ src/
 
 **All portfolio content lives in `/src/data/info.ts`**
 
-- Experience, education, strengths/interests, technologies, social links
+- Experience, education, strengths, technologies, social links
 - Update content → edit one file
 - Components read from `info` object and render
 
@@ -59,21 +59,6 @@ Edit `/src/data/info.ts` → `technologies` array:
 { name: "Tech Name", category: "Frameworks" }
 ```
 `category` must be one of the `TechCategory` values in `src/types/index.ts`.
-</details>
-
-<details>
-<summary>Writing a post</summary>
-
-Add a Markdown file to `/src/content/writing/` (the filename becomes the URL slug):
-```markdown
----
-title: "Post title"
-description: "One-sentence summary shown in lists and link previews"
-pubDate: 2026-10-05
-draft: true # hidden everywhere (dev included); remove to publish
----
-```
-The homepage Writing section, navbar link, and "Read My Writing" hero button appear automatically once at least one post is published (not a draft).
 </details>
 
 <details>

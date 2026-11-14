@@ -2,7 +2,7 @@
 import type { IHeroProps } from "@types";
 import { info } from "@data";
 
-const { name, hasWriting } = Astro.props as IHeroProps;
+const { name } = Astro.props as IHeroProps;
 
 // Derive company names from experience (e.g. "Okta - Senior..." -> "Okta")
 const companies = info.experience.map((e) => e.name.split(" - ")[0]);
@@ -18,7 +18,7 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 		class="flex flex-col lg:flex-row items-start justify-between gap-12 mb-12"
 	>
 		<!-- Left Content -->
-		<div class="flex flex-col items-start flex-1 animate-fade-in-up">
+		<div class="flex flex-col items-start flex-1">
 			<p class="text-gray-600 dark:text-gray-400 text-lg sm:text-xl mb-2">
 				Hey, I'm
 			</p>
@@ -35,12 +35,12 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 			<!-- CTA Buttons -->
 			<div class="flex flex-wrap gap-4">
 				<a
-					href={hasWriting ? "/writing/" : "/assets/AlexKornResume.pdf"}
-					target={hasWriting ? undefined : "_blank"}
-					rel={hasWriting ? undefined : "noopener noreferrer"}
+					href="/assets/AlexKornResume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
 					class="cta-primary inline-flex items-center px-7 py-3.5 bg-linear-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl font-medium shadow-lg shadow-blue-500/25"
 				>
-					{hasWriting ? "Read My Writing" : "View Resume"}
+					View Resume
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="16"
