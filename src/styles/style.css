@@ -8,7 +8,7 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme {
-  --color-dark: #111111;
+  --color-dark: #0b1220;
   --color-light: #ffffff;
   --color-dark-gray: #374151;
   --color-light-gray: #f3f4f6;

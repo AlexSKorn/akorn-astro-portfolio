@@ -7,7 +7,7 @@ const linkClass =
 ---
 
 <header
-	class="container flex items-center justify-between h-16 sm:h-20 sticky top-0 bg-white/80 dark:bg-[#111111]/80 backdrop-blur-md z-50"
+	class="container flex items-center justify-between h-16 sm:h-20 sticky top-0 bg-white/80 dark:bg-dark/80 backdrop-blur-md z-50"
 >
 	<a
 		class="text-2xl text-gray-800 dark:text-gray-100 font-semibold font-outfit"
@@ -88,7 +88,7 @@ const linkClass =
 		const apply = (theme) => {
 			document.documentElement.setAttribute("data-theme", theme);
 			button.setAttribute("aria-pressed", String(theme === "dark"));
-			if (themeColor) themeColor.content = theme === "dark" ? "#111111" : "#ffffff";
+			if (themeColor) themeColor.content = theme === "dark" ? "#0b1220" : "#ffffff";
 		};
 		apply(document.documentElement.getAttribute("data-theme"));
 
