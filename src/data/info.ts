@@ -61,6 +61,7 @@ export const info = {
 				"DynamoDB",
 				"OpenSearch",
 				"LangGraph",
+				"Temporal",
 				"gRPC",
 				"REST",
 			],
@@ -286,6 +287,7 @@ export const info = {
 		{ name: "Kubernetes", category: "Cloud & Infrastructure" },
 		{ name: "Terraform", category: "Cloud & Infrastructure" },
 		{ name: "Kafka", category: "Cloud & Infrastructure" },
+		{ name: "Temporal", category: "Cloud & Infrastructure" },
 
 		{ name: "Grafana", category: "Monitoring & CI/CD" },
 		{ name: "Datadog", category: "Monitoring & CI/CD" },
