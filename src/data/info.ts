@@ -3,7 +3,7 @@ import type { ITechnology } from "@types";
 export const info = {
 	baseUrl: "https://akorn.netlify.app",
 	name: "Alex Korn",
-	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
+	jobDescription: "Senior Software Engineer · AI, Identity & Distributed Systems",
 
 	about: `I'm a senior software engineer working on distributed systems and AI platforms. At Twilio I lead the build of a new AI Agent Identity platform, from first commit to production. Before that, at Okta, I worked on Auth0 Actions, the serverless platform that runs customer code inside login flows, holding P99 latency under 300ms at 5,000+ requests per second. Over 8+ years I've owned products end to end, from React frontends to APIs, infrastructure and observability, working directly with product managers and customers on what to build.`,
 
