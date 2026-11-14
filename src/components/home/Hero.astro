@@ -83,15 +83,15 @@ const previousCompanies = [...new Set(companies.slice(1))].slice(0, 3);
 				<p class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
 					Previously
 				</p>
-				<div class="flex flex-wrap gap-2">
+				<ul class="flex flex-wrap text-sm font-medium leading-relaxed" role="list">
 					{
 						previousCompanies.map((company) => (
-							<span class="px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 text-xs font-medium rounded-full">
+							<li class="text-gray-700 dark:text-gray-200 after:content-['·'] after:mx-2 after:text-gray-400 dark:after:text-gray-500 last:after:content-none">
 								{company}
-							</span>
+							</li>
 						))
 					}
-				</div>
+				</ul>
 			</div>
 		</div>
 	</div>

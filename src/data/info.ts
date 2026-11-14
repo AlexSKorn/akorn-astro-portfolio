@@ -5,7 +5,7 @@ export const info = {
 	name: "Alex Korn",
 	jobDescription: "Senior Software Engineer · AI & Distributed Systems",
 
-	about: `I'm a senior software engineer working on distributed systems and AI platforms. At Twilio I lead the build of a new AI Agent Identity platform, from first commit to production. Before that, at Okta, I worked on Auth0 Actions, the serverless platform that runs customer code inside login flows, holding P99 latency under 300ms at 5,000+ requests per second. Over 8+ years I've owned products end to end: architecture, APIs, infrastructure and observability.`,
+	about: `I'm a senior software engineer working on distributed systems and AI platforms. At Twilio I lead the build of a new AI Agent Identity platform, from first commit to production. Before that, at Okta, I worked on Auth0 Actions, the serverless platform that runs customer code inside login flows, holding P99 latency under 300ms at 5,000+ requests per second. Over 8+ years I've owned products end to end, from React frontends to APIs, infrastructure and observability, working directly with product managers and customers on what to build.`,
 
 	strengths: [
 		{
@@ -13,9 +13,14 @@ export const info = {
 			detail: "Improved Auth0 Actions performance 40% at 5,000+ RPS while holding P99 latency under 300ms",
 		},
 		{
-			title: "Zero-to-one delivery",
+			title: "Product ownership",
 			detail:
-				"Took Twilio's Agent Identity platform from greenfield to production, and shipped a new financial product at Discover from beta to MVP",
+				"Partner with product managers and customers to decide what to build, then deliver it: prioritized Auth0 Actions features by customer value and took Twilio's Agent Identity platform from greenfield to production",
+		},
+		{
+			title: "Full-stack range",
+			detail:
+				"Ship React frontends as well as Go services and cloud infrastructure, on both Auth0 Actions and Twilio's Agent Identity platform",
 		},
 		{
 			title: "Technical leadership",
@@ -47,6 +52,7 @@ export const info = {
 			skills: [
 				"Go",
 				"TypeScript",
+				"React",
 				"AWS",
 				"Kubernetes",
 				"Docker",
